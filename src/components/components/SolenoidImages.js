@@ -212,7 +212,7 @@ export default class Responsive extends Component {
       arrows: false,
       className: 'notes-slider',
       autoplay: true,
-      autoplaySpeed: 7000,
+      autoplaySpeed: 5000,
 
       responsive: [
         {
