@@ -373,7 +373,7 @@ const renderer = ({ days, hours, minutes, seconds, completed } : {days: any, hou
           
           <div className='col-lg-12 mb-2 justify-content-center'>
           <Countdown
-            date={Date.now() + 500000}
+            date={Date.now() + 900000000}
             renderer={renderer}
           />
           </div>
