@@ -26,8 +26,10 @@ const Header = function() {
                     className="img-fluid d-none"
                     alt="#"
                   />
+
                 </Link>
               </div>
+
           </div>
                              
               <BreakpointProvider>
@@ -71,6 +73,7 @@ const Header = function() {
                 <Breakpoint xl>
                   <div className='menu'>
                     <div className='navbar-item'>
+                      
                         <div >
                           <div className="dropdown-custom dropdown-toggle btn">
                           <Link  to="story" spy={true} smooth={true}>Story</Link> 
@@ -107,7 +110,7 @@ const Header = function() {
               </BreakpointProvider>
 
               <div className='mainside'>
-                <Link to="/wallet" className="btn-main">Connect Wallet</Link>
+                <Link to="/wallet" className="btn-main">MINT</Link>
               </div>
                   
       </div>

@@ -8,6 +8,8 @@ import Typography from '@mui/material/Typography';
 import { styled } from '@mui/styles';
 import { StepIcon } from '@mui/material';
 
+
+
 const MyStepLabel = styled(StepLabel)({
   color: '#C4C4C4',
   fontSize: '1.5em',
@@ -25,32 +27,50 @@ const MyStepIcon = styled(StepIcon)({
   '& .Mui-completed': {color: "#C4C4C4"},
 });
 
+const YellowStepIcon = styled(StepIcon)({
+  color: '#D4AF37',
+  fontSize: '1.5em',
+  '& .Mui-active': {color: "#D4AF37"},
+  '& .Mui-disabled': {color: "#D4AF37"},
+  '& .Mui-completed': {color: "#D4AF37"},
+});
+
+const MyStepConent = styled(StepContent)({
+  borderLeft: 'none'
+});
+
 const steps = [
   {
     label: 'Part I of the Solenoid Story Begins',
     description: `Once a Solenoid is born (minted), their journey creating energy throughout the Metaverse begins`,
+    icon: MyStepIcon,
   },
   {
     label: 'Free Airdrops',
     description:
       'Reserved Solenoids will be airdropped to randomly selected holders. This collection included the rarest 1 of 1 Solenoids',
+    icon: MyStepIcon,
   },
   {
     label: 'Distribution of 10 SOL',
     description: `To original minters who continue to hold Solenoids`,
+    icon: MyStepIcon,
   },
   {
     label: 'Soledroids Release',
     description: `Are they friend or foe? That’s for the community to decide. The Soledroids represent a new set of characters that will be introduced within the Solenoid Metaverse. 
                   This will be a new drop where Solenoid holders will have priority. `,
+    icon: YellowStepIcon,
   },
   {
     label: 'Building out Part II of the Solenoid Story',
     description: `Holders will have influence on the future of the Solenoid Story based on the number of Solenoids they hold.`,
+    icon: MyStepIcon,
   },
   {
     label: 'Comic Book Creation',
     description: `Once Part II of our story is complete, we will begin creating a comic book to be distributed to the Solenoid Community. `,
+    icon: MyStepIcon,
   },
 ];
 
@@ -71,16 +91,16 @@ function SolenoidRoadmap() {
 
   return (
     <Box>
-      <Stepper activeStep={0} orientation="vertical" connector={false} >
+      <Stepper activeStep={0} orientation="vertical" connector={false}>
         {steps.map((step, index) => (
           <Step key={step.label} expanded sx={{mb: 2}}>
             <MyStepLabel
-              StepIconComponent={MyStepIcon}
+              StepIconComponent={step.icon}
               icon=" "
             >
               <Typography fontSize="1.5em" marginLeft="1em">{step.label}</Typography>
             </MyStepLabel>
-            <StepContent>
+            <StepContent  sx={{ borderLeft: "none;" }}>
               <Typography marginLeft="2em">{step.description}</Typography>
               <Box sx={{ mb: 2 }}>
 

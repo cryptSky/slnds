@@ -44,7 +44,7 @@ const slidermainparticle= () => (
               </Reveal>
               <div className="spacer-10"></div>
               <Reveal className='onStep d-inline' keyframes={inline} delay={800} duration={900} triggerOnce>
-              <span onClick={()=> window.open("#", "_self")} className="btn-main inline lead">Connect Wallet </span>
+              <span onClick={()=> window.open("#", "_self")} className="btn-main inline lead">MINT </span>
               <div className="mb-sm-30"></div>
               </Reveal>
 
@@ -59,7 +59,7 @@ const slidermainparticle= () => (
           </div>
           <div className="col-md-6 xs-hide mt-10">
           <Reveal className='onStep d-inline' keyframes={inline} delay={300} duration={1200} triggerOnce>
-              <img src="./img/solenoid_small.jpg" className="img-fluid img-main m-t-30" alt=""/>
+              <img src="./img/SolenoidsGif.gif" className="img-fluid img-main m-t-30" alt=""/>
           </Reveal>
           </div>
       </div>
