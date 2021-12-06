@@ -33,8 +33,8 @@ const slidermainparticle= () => (
               <div className="spacer-single"></div>
               <h6> <span className="text-uppercase color"></span></h6>
               <Reveal className='onStep' keyframes={fadeInUp} delay={300} duration={900} triggerOnce>
-              <h1>SOLENOIDS</h1>
-              <h1>HAVE ARRIVED</h1>
+              <h1 className="solenoid-title">SOLENOIDS</h1>
+              <h1 className="solenoid-title">HAVE ARRIVED</h1>
               </Reveal>
               <Reveal className='onStep' keyframes={fadeInUp} delay={600} duration={900} triggerOnce>
               <p className="col-gray">

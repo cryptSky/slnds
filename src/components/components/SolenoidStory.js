@@ -33,7 +33,7 @@ const SolenoidStory= () => (
               </Reveal>
               <div className="spacer-10"></div>
               <Reveal className='onStep' keyframes={fadeInUp} delay={300} duration={600} triggerOnce>
-              <h1 className="">The Solenoid Story</h1>
+              <h1 className="solenoid-title">The Solenoid Story</h1>
               </Reveal>
               <Reveal className='onStep' keyframes={fadeInUp} delay={300} duration={600} triggerOnce>
               <h2 className="partI">[Part I]</h2>

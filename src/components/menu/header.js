@@ -24,6 +24,7 @@ const Header = function() {
                   <img
                     src="./img/solenoids_logo.png"
                     className="img-fluid d-none"
+                    id="logo-img"
                     alt="#"
                   />
 
@@ -109,7 +110,7 @@ const Header = function() {
                 </Breakpoint>
               </BreakpointProvider>
 
-              <div className='mainside'>
+              <div className='mainside mint-button'>
                 <Link to="/wallet" className="btn-main">MINT</Link>
               </div>
                   

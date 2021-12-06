@@ -244,7 +244,8 @@ export default class Responsive extends Component {
           settings: {
             slidesToShow: 2,
             slidesToScroll: 1,
-            initialSlide: 2
+            //initialSlide: 2,
+            infinite: true
           }
         },
         {
@@ -252,7 +253,7 @@ export default class Responsive extends Component {
           settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
-            dots: true
+            infinite: true
           }
         }
       ]

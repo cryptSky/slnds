@@ -284,10 +284,6 @@ const GlobalStyles = createGlobalStyle`
     color: #f2f2f2;
 }
 
-  .solenoid-title {
-    font-size: 58px;
-  }
-
   #myHeader .btn-main {
     background: #D4AF37;
     &:hover{
@@ -360,17 +356,16 @@ const renderer = ({ days, hours, minutes, seconds, completed } : {days: any, hou
       <div className='row'>
           
           <div className="spacer-double"></div>
-          <div className='col-lg-12 mb-2'>
-              
-          </div>
+
         </div> 
          <SolenoidSliderMain/>
       </section>
 
       <section className="container">
-      <h1 className='text-center launch-shadow solenoid-title'>Time Till Launch</h1>
+      
       <div className='row'>
-          
+        <div className="spacer-double"></div>
+          <h1 className='text-center launch-shadow solenoid-title'>Time Till Launch</h1>
           <div className='col-lg-12 mb-2 justify-content-center'>
           <Countdown
             date={new Date(2021,11,30)}
