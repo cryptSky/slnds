@@ -1,7 +1,8 @@
 import { useState } from "react";
 import Breakpoint, { BreakpointProvider, setDefaultBreakpoints } from "react-socks";
 import {Link, scroller} from 'react-scroll';
-
+import { confirmAlert } from "react-confirm-alert";
+import 'react-confirm-alert/src/react-confirm-alert.css';
 
 
 setDefaultBreakpoints([
@@ -10,7 +11,26 @@ setDefaultBreakpoints([
   { xl: 1200 }
 ]);
 
+
+const submit = () => {
+  confirmAlert({
+    customUI: ({ onClose }) => {
+      return (
+        <div className='custom-ui align-content-center'>
+          <h1>Hey!</h1>
+          <p>The Solenoid Mint begins on December 22nd at 5 PM UCT.</p> 
+          <p><span>Join our </span><span className="link-primary" onClick={()=> window.open("https://discord.gg/UYxrby2ZmF", "_target")}>Discord</span><span> and follow us on </span><span className="link-primary" onClick={()=> window.open("https://twitter.com/SolenoidsNFT", "_target")}>Twitter</span><span> for updates.</span></p>
+          <div className="btn-ok"  onClick={onClose}>Ok</div>
+
+        </div>
+      );
+    }
+  });
+};
+
 const Header = function() {
+
+  
 
   const [showmenu, btn_icon] = useState(false);
 
@@ -143,7 +163,7 @@ const Header = function() {
               </BreakpointProvider>
 
               <div className='mainside mint-button'>
-                <Link to="/wallet" className="btn-main">MINT</Link>
+                <div onClick={submit} className="btn-main">MINT</div>
               </div>
                   
       </div>

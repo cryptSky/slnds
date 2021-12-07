@@ -73,7 +73,7 @@ export default function SolenoidFAQ() {
         </AccordionSummary>
         <AccordionDetails>
           <MyTypography color="#a2a2a2;" marginLeft="2em" fontSize="1.2rem;" >
-          You can only mint a Solenoid through our website link. Do not trust any links that are not from the Solenoid website (<Link to="top" spy={true} smooth={true} class="link-primary">http://solenoid.io/</Link>)
+          You can only mint a Solenoid through our website link. Do not trust any links that are not from the Solenoid website (<Link to="top" spy={true} smooth={true} className="link-primary">http://solenoid.io/</Link>)
           </MyTypography>
         </AccordionDetails>
       </Accordion>
@@ -123,7 +123,7 @@ export default function SolenoidFAQ() {
         </AccordionSummary>
         <AccordionDetails>
           <MyTypography color="#a2a2a2;" marginLeft="2em" fontSize="1.2rem;" >
-          Solenoids can be bought on <a href="https://solanart.io" class="link-primary">solanart.io</a> after the minting process is completed  
+          Solenoids can be bought on <a href="https://solanart.io" className="link-primary">solanart.io</a> after the minting process is completed  
           </MyTypography>
         </AccordionDetails>
       </Accordion>

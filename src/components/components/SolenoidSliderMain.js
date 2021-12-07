@@ -1,6 +1,7 @@
-import React from 'react';
 import Reveal from 'react-awesome-reveal';
 import { keyframes } from "@emotion/react";
+import { confirmAlert } from "react-confirm-alert";
+import 'react-confirm-alert/src/react-confirm-alert.css';
 
 const fadeInUp = keyframes`
   0% {
@@ -26,6 +27,23 @@ const inline = keyframes`
    }
 `;
 
+
+const submit = () => {
+  confirmAlert({
+    customUI: ({ onClose }) => {
+      return (
+        <div className='custom-ui align-content-center'>
+          <h1>Hey!</h1>
+          <p>The Solenoid Mint begins on December 22nd at 5 PM UCT.</p> 
+          <p><span>Join our </span><span className="link-primary" onClick={()=> window.open("https://discord.gg/UYxrby2ZmF", "_target")}>Discord</span><span> and follow us on </span><span className="link-primary" onClick={()=> window.open("https://twitter.com/SolenoidsNFT", "_target")}>Twitter</span><span> for updates.</span></p>
+          <div className="btn-ok"  onClick={onClose}>Ok</div>
+
+        </div>
+      );
+    }
+  });
+};
+
 const slidermainparticle= () => (
  <div className="container">
     <div className="row align-items-center">
@@ -44,14 +62,14 @@ const slidermainparticle= () => (
               </Reveal>
               <div className="spacer-10"></div>
               <Reveal className='onStep d-inline' keyframes={inline} delay={800} duration={900} triggerOnce>
-              <span onClick={()=> window.open("#", "_self")} className="btn-main inline lead">MINT </span>
+              <div onClick={submit} className="btn-main">MINT</div>
               <div className="mb-sm-30"></div>
               </Reveal>
 
           </div>
           <div className="col-md-6 xs-hide mt-10">
           <Reveal className='onStep d-inline' keyframes={inline} delay={300} duration={1200} triggerOnce>
-                <iframe src="https://giphy.com/embed/J39lmbcVo74gC6SDCe" width="400" height="400" frameBorder="0" className="giphy-embed" allowFullScreen></iframe>
+            <div className="slider-image"><iframe src="https://giphy.com/embed/J39lmbcVo74gC6SDCe" width="100%" height="100%" frameBorder="0" className="giphy-embed position-absolute" allowFullScreen></iframe></div>
           </Reveal>
           </div>
       </div>

@@ -355,7 +355,7 @@ const renderer = ({ days, hours, minutes, seconds, completed } : {days: any, hou
 <div>
   <GlobalStyles />
     <Element name="top"></Element>
-      <section className="container" >
+      <section className="container" style={{ paddingBottom: "50px" }}>
       <div className='row align-items-center'>
           
           <div className="spacer-double"></div>
@@ -364,10 +364,9 @@ const renderer = ({ days, hours, minutes, seconds, completed } : {days: any, hou
          <SolenoidSliderMain/>
       </section>
 
-      <section className="container">
+      <section className="container" style={{ paddingTop: "50px" }}>
       
       <div className='row'>
-        <div className="spacer-double"></div>
           <h1 className='text-center launch-shadow solenoid-title'>Time Till Launch</h1>
           <div className='col-lg-12 mb-2 justify-content-center'>
           <Countdown
