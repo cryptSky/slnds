@@ -51,7 +51,7 @@ const slidermainparticle= () => (
           </div>
           <div className="col-md-6 xs-hide mt-10">
           <Reveal className='onStep d-inline' keyframes={inline} delay={300} duration={1200} triggerOnce>
-                <iframe src="https://giphy.com/embed/J39lmbcVo74gC6SDCe" width="400" height="400" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+                <iframe src="https://giphy.com/embed/J39lmbcVo74gC6SDCe" width="400" height="400" frameBorder="0" className="giphy-embed" allowFullScreen></iframe>
           </Reveal>
           </div>
       </div>
