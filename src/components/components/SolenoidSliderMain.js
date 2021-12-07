@@ -27,7 +27,7 @@ const inline = keyframes`
 `;
 
 const slidermainparticle= () => (
- <div className="container ">
+ <div className="container">
     <div className="row align-items-center">
           <div className="col-md-6">
               <div className="spacer-single"></div>

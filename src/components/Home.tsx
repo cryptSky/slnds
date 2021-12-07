@@ -356,7 +356,7 @@ const renderer = ({ days, hours, minutes, seconds, completed } : {days: any, hou
   <GlobalStyles />
     <Element name="top"></Element>
       <section className="container" >
-      <div className='row'>
+      <div className='row align-items-center'>
           
           <div className="spacer-double"></div>
 

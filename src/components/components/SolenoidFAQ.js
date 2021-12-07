@@ -67,6 +67,16 @@ export default function SolenoidFAQ() {
           </MyTypography>
         </AccordionDetails>
       </Accordion>
+      <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
+        <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
+          <MyTypography color="#C4C4C4;"  fontSize="1.5rem;">When can you mint a Solenoid?</MyTypography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <MyTypography color="#a2a2a2;" marginLeft="2em" fontSize="1.2rem;" >
+          You can only mint a Solenoid through our website link. Do not trust any links that are not from the Solenoid website (<Link to="top" spy={true} smooth={true} class="link-primary">http://solenoid.io/</Link>)
+          </MyTypography>
+        </AccordionDetails>
+      </Accordion>
       <Accordion expanded={expanded === 'panel3'} onChange={handleChange('panel3')}>
         <AccordionSummary aria-controls="panel3d-content" id="panel3d-header">
           <MyTypography color="#C4C4C4;"  fontSize="1.5rem;">How to mint a Solenoid?</MyTypography>
@@ -113,20 +123,11 @@ export default function SolenoidFAQ() {
         </AccordionSummary>
         <AccordionDetails>
           <MyTypography color="#a2a2a2;" marginLeft="2em" fontSize="1.2rem;" >
-          Solenoids can be bought on random earth after the minting process is completed  
+          Solenoids can be bought on <a href="https://solanart.io" class="link-primary">solanart.io</a> after the minting process is completed  
           </MyTypography>
         </AccordionDetails>
       </Accordion>
-      <Accordion expanded={expanded === 'panel2'} onChange={handleChange('panel2')}>
-        <AccordionSummary aria-controls="panel2d-content" id="panel2d-header">
-          <MyTypography color="#C4C4C4;"  fontSize="1.5rem;">When can you mint a Solenoid?</MyTypography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <MyTypography color="#a2a2a2;" marginLeft="2em" fontSize="1.2rem;" >
-          You can only mint a Solenoid through our website link. Do not trust any links that are not from the Solenoid website (<Link to="top" spy={true} smooth={true} class="link-primary">http://solenoid.io/</Link>)
-          </MyTypography>
-        </AccordionDetails>
-      </Accordion>
+
     </div>
   );
 }
