@@ -11,7 +11,7 @@ const Accordion = styled((props) => (
   <MuiAccordion disableGutters elevation={0} square {...props} />
 ))(({ theme }) => ({
 
-  backgroundColor: '#333333',
+  backgroundColor: '#01030d',
   //border: `1px solid ${theme.palette.divider}`,
   '&:not(:last-child)': {
     borderBottom: 0,
@@ -27,7 +27,7 @@ const AccordionSummary = styled((props) => (
     {...props}
   />
 ))(({ theme }) => ({
-  backgroundColor: '#333333',
+  backgroundColor: '#01030d',
   flexDirection: 'row-reverse',
   '& .MuiAccordionSummary-expandIconWrapper.Mui-expanded': {
     transform: 'rotate(90deg)',
@@ -41,7 +41,7 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   padding: theme.spacing(2),
   marginTop: theme.spacing(2),
   //borderTop: '1px solid rgba(172, 140, 37, .125)',
-  backgroundColor: '#333333',
+  backgroundColor: '#01030d',
 }));
 
 const MyTypography = styled(Typography)({

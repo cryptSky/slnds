@@ -64,7 +64,7 @@ body {
   font-weight: 300;
   font-size: 16px;
   color: $general;
-  background: #333333;
+  background: #01030d;
   word-spacing: 0px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1664,7 +1664,7 @@ footer{
         border-radius: 30px 0 0 30px;
         color: #ffffff;
         background: rgba(255, 255, 255, .1);
-        border: solid 1px #333333;
+        border: solid 1px #01030d;
         border-right-color: rgb(51, 51, 51);
         border-right-style: solid;
         border-right-width: 1px;
@@ -4112,7 +4112,7 @@ img.img-rounded-main{
   text-align: center;
   width: 500px;
   padding: 40px;
-  background: #333333;
+  background: #01030d;
   box-shadow: 0 20px 75px rgb(0 0 0 / 23%);
   color: #D9AF2A;
   @media (max-width: 400px) {
@@ -4168,7 +4168,7 @@ img.img-rounded-main{
 }
 #clockdiv div{
   
-  background: #333333;
+  background: #01030d;
 }
 
 #clockdiv div > .number{
@@ -4178,6 +4178,7 @@ img.img-rounded-main{
   //width: fit-content;
   width: auto;
   background: #D4D4D4;
+  font-weight: bold;
   color: #843BE6;
   font-family: "Avenir Next" !important;
 }

@@ -279,7 +279,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   header#myHeader.navbar.white {
-    background: #333333;
+    background: #01030d;
   }
 
   .navbar.white .btn {
