@@ -43,7 +43,7 @@ const Header = function() {
               
                   <img
                     src="./img/solenoids_logo.png"
-                    className="img-fluid d-none"
+                    className="img-fluid"
                     id="logo-img"
                     alt="#"
                   />
@@ -52,8 +52,8 @@ const Header = function() {
 
               <div className='navbar-item'>
                 <div className='header-social'>                                        
-                  <span onClick={()=> window.open("https://twitter.com/SolenoidsNFT", "_target")}><i className="fab fa-twitter"></i></span>
-                  <span onClick={()=> window.open("https://discord.gg/UYxrby2ZmF", "_target")}><i className="fab fa-discord p-2"></i></span>
+                  <span onClick={()=> window.open("https://twitter.com/SolenoidsNFT", "_target")}><i className="fab fa-twitter header-social-icon"></i></span>
+                  <span onClick={()=> window.open("https://discord.gg/UYxrby2ZmF", "_target")}><i className="fab fa-discord header-social-icon"></i></span>
                 </div>
 
               </div>
@@ -168,11 +168,13 @@ const Header = function() {
                   
       </div>
 
+      <div>
         <button className="nav-icon" onClick={() => btn_icon(!showmenu)}>
           <div className="menu-line white"></div>
           <div className="menu-line1 white"></div>
           <div className="menu-line2 white"></div>
         </button>
+      </div>
 
       </div>     
     </header>

@@ -306,7 +306,7 @@ const renderer = ({ days, hours, minutes, seconds, completed } : {days: any, hou
     // Render a countdown
     return (
         
-        <div className="container-fluid mt-5">
+        <div className="container-fluid mt-2">
           <div className="centerthis">
           <div></div>
           <div id="clockdiv">           
@@ -355,7 +355,7 @@ const renderer = ({ days, hours, minutes, seconds, completed } : {days: any, hou
 <div>
   <GlobalStyles />
     <Element name="top"></Element>
-      <section className="container" style={{ paddingBottom: "50px" }}>
+      <section className="container" >
       <div className='row align-items-center'>
           
           <div className="spacer-double"></div>
@@ -364,13 +364,13 @@ const renderer = ({ days, hours, minutes, seconds, completed } : {days: any, hou
          <SolenoidSliderMain/>
       </section>
 
-      <section className="container" style={{ paddingTop: "50px" }}>
+      <section className="container" >
       
       <div className='row'>
           <h1 className='text-center launch-shadow solenoid-title'>Time Till Launch</h1>
           <div className='col-lg-12 mb-2 justify-content-center'>
           <Countdown
-            date={new Date(2021,11,30)}
+            date={new Date(Date.UTC(2021, 11, 22, 17, 0, 0))}
             renderer={renderer}
           />
           </div>

@@ -123,7 +123,7 @@ export default function SolenoidFAQ() {
         </AccordionSummary>
         <AccordionDetails>
           <MyTypography color="#a2a2a2;" marginLeft="2em" fontSize="1.2rem;" >
-          Solenoids can be bought on <a href="https://solanart.io" className="link-primary">solanart.io</a> after the minting process is completed  
+          Solenoids can be bought on various secondary exchanges after the minting process is completed  
           </MyTypography>
         </AccordionDetails>
       </Accordion>
