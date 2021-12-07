@@ -39,7 +39,7 @@ const slidermainparticle= () => (
               <Reveal className='onStep' keyframes={fadeInUp} delay={600} duration={900} triggerOnce>
               <p className="col-gray">
               A collection of 3,333 unique characters who distribute energy on the Solana blockchain. </p>
-              <p className="col-gray">Each Solenoid will mint for 1.5 SOL. 
+              <p className="col-gray">Each Solenoid will mint for 1 SOL. 
               </p>
               </Reveal>
               <div className="spacer-10"></div>
@@ -48,18 +48,10 @@ const slidermainparticle= () => (
               <div className="mb-sm-30"></div>
               </Reveal>
 
-              <Reveal className='onStep d-inline' keyframes={inline} delay={900} duration={1200} triggerOnce>
-              <div className="row">
-                  
-                  <div className="row">
-                          
-                      </div>
-              </div>
-              </Reveal>
           </div>
           <div className="col-md-6 xs-hide mt-10">
           <Reveal className='onStep d-inline' keyframes={inline} delay={300} duration={1200} triggerOnce>
-              <img src="./img/SolenoidsGif.gif" className="img-fluid img-main m-t-30" alt=""/>
+                <iframe src="https://giphy.com/embed/J39lmbcVo74gC6SDCe" width="360" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
           </Reveal>
           </div>
       </div>

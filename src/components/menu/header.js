@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Breakpoint, { BreakpointProvider, setDefaultBreakpoints } from "react-socks";
-import {Link} from 'react-scroll';
+import {Link, scroller} from 'react-scroll';
 
 
 
@@ -18,9 +18,9 @@ const Header = function() {
     <header id="myHeader" className='navbar white'>
      <div className='container'>
        <div className='row w-100-nav'>
-          <div className='logo px-0'>
-              <div className='navbar-title navbar-item'>
-                  <Link to="/">
+          <div className='logo px-0 navbar-title'>
+              <div className='navbar-item'>
+              
                   <img
                     src="./img/solenoids_logo.png"
                     className="img-fluid d-none"
@@ -28,7 +28,14 @@ const Header = function() {
                     alt="#"
                   />
 
-                </Link>
+              </div>
+
+              <div className='navbar-item'>
+                <div className='header-social'>                                        
+                  <span onClick={()=> window.open("https://twitter.com/SolenoidsNFT", "_target")}><i className="fab fa-twitter"></i></span>
+                  <span onClick={()=> window.open("https://discord.gg/UYxrby2ZmF", "_target")}><i className="fab fa-discord p-2"></i></span>
+                </div>
+
               </div>
 
           </div>
@@ -37,27 +44,42 @@ const Header = function() {
                 <Breakpoint l down>
                 {showmenu &&
                   <div className='menu'>
-                    <div className='navbar-item'>
+                    <div className='navbar-item' onClick={() => scroller.scrollTo('story', {
+                            smooth: true,
+                            offset: -70,
+                            duration: 500,
+                        })}>
+                    
                         <div >
-                          <div className="dropdown-custom dropdown-toggle btn" >
-                          <Link  to="story" spy={true} smooth={true}>Story</Link>
-                            
+                        <div className="dropdown-custom dropdown-toggle btn" >
+                            <Link  to="story" spy={true} smooth={true}>
+                             Story
+                            </Link>
                             <span className='lines'></span>                         
                           </div>
                           
                         </div>
+
                     </div>
-                    <div className='navbar-item'>
-                      <div>
+                    <div className='navbar-item' onClick={() => scroller.scrollTo('roadmap', {
+                            smooth: true,
+                            offset: -70,
+                            duration: 500,
+                        })}>
                           <div className="dropdown-custom dropdown-toggle btn" >
-                          <Link to="roadmap" spy={true} smooth={true}>Roadmap</Link>                           
+                            <Link to="roadmap" spy={true} smooth={true} >
+                              Roadmap
+                            </Link>                       
                             <span className='lines'></span>
                             
                           </div>
-                          
-                        </div>
+
                     </div>
-                    <div className='navbar-item'>
+                    <div className='navbar-item'  onClick={() => scroller.scrollTo('faq', {
+                            smooth: true,
+                            offset: -70,
+                            duration: 500,
+                        })}>
                       <div>
                           <div className="dropdown-custom dropdown-toggle btn" >
                           <Link  to="faq" spy={true} smooth={true}>FAQ</Link> 
@@ -73,18 +95,24 @@ const Header = function() {
 
                 <Breakpoint xl>
                   <div className='menu'>
-                    <div className='navbar-item'>
+                    <div className='navbar-item' onClick={() => scroller.scrollTo('story', {
+                            smooth: true,
+                            offset: -70,
+                            duration: 500,
+                        })}>
                       
-                        <div >
                           <div className="dropdown-custom dropdown-toggle btn">
                           <Link  to="story" spy={true} smooth={true}>Story</Link> 
                             
                             <span className='lines'></span>                         
                           </div>
-                          
-                        </div>
+
                     </div>
-                    <div className='navbar-item'>
+                    <div className='navbar-item' onClick={() => scroller.scrollTo('roadmap', {
+                            smooth: true,
+                            offset: -70,
+                            duration: 500,
+                        })}>
                       <div>
                           <div className="dropdown-custom dropdown-toggle btn" >
                           <Link  to="roadmap" spy={true} smooth={true}>Roadmap</Link> 
@@ -95,7 +123,11 @@ const Header = function() {
                           
                         </div>
                     </div>
-                    <div className='navbar-item'>
+                    <div className='navbar-item'  onClick={() => scroller.scrollTo('faq', {
+                            smooth: true,
+                            offset: -70,
+                            duration: 500,
+                        })}>
                       <div>
                           <div className="dropdown-custom dropdown-toggle btn" >
                           <Link  to="faq" spy={true} smooth={true}>FAQ</Link> 

@@ -9,6 +9,8 @@ import { LAMPORTS_PER_SOL } from "@solana/web3.js";
 import { useAnchorWallet } from "@solana/wallet-adapter-react";
 import { WalletDialogButton } from "@solana/wallet-adapter-material-ui";
 
+import { Element } from 'react-scroll';
+
 import {
   CandyMachine,
   awaitTransactionSignatureConfirmation,
@@ -352,6 +354,7 @@ const renderer = ({ days, hours, minutes, seconds, completed } : {days: any, hou
 
 <div>
   <GlobalStyles />
+    <Element name="top"></Element>
       <section className="container" >
       <div className='row'>
           
@@ -387,12 +390,14 @@ const renderer = ({ days, hours, minutes, seconds, completed } : {days: any, hou
         <SolenoidImages/>
       </section>
 
-   <section className="container" id="story">
+    <Element name="story"></Element>
+   <section className="container">
       
       <SolenoidStory/>
    </section>
 
-  <section className='container'  id="roadmap">
+   <Element name="roadmap"></Element>
+  <section className='container'>
   <h1 className="launch-shadow solenoid-title">Roadmap</h1>
     <div className='row'>
     <div className="spacer-single"></div>
@@ -402,7 +407,8 @@ const renderer = ({ days, hours, minutes, seconds, completed } : {days: any, hou
     </div>
   </section>
 
-  <section className='container' id="faq">
+  <Element name="faq"></Element>
+  <section className='container'>
   <h1 className="launch-shadow solenoid-title">FAQ</h1>
     <div className='row'>
 

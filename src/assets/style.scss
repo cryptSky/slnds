@@ -60,7 +60,7 @@ $color_more: #FC202C;
 /*general*/
 html {scroll-behavior: auto;}
 body {
-  font-family: "DM Sans", Helvetica, Arial, sans-serif;
+  font-family: "Avenir Next" !important;
   font-weight: 300;
   font-size: 16px;
   color: $general;
@@ -4108,7 +4108,7 @@ img.img-rounded-main{
   width: auto;
   background: #D4D4D4;
   color: #843BE6;
-  text-shadow: 2px 2px 2px black;
+  font-family: "Avenir Next" !important;
 }
 
 #clockdiv > .colon{
@@ -4119,27 +4119,50 @@ img.img-rounded-main{
 .smalltext{
   padding: 4px 0px 5px 0px;
   font-size:16px;
+  font-family: "Avenir Next" !important;
 }
 
 .partI {
   color: #D9AF2A;
+  font-family: "Avenir Next" !important;
 }
 
 .col-gray {
   color: #C4C4C4;
   font-size: 22px;
+  font-family: "Avenir Next" !important;
 }
 
 .white-gray {
   color: #f2f2f2;
+  font-family: "Avenir Next" !important;
 }
 
 .solenoid-title {
-  text-shadow: 2px 2px 2px black;
+  font-family: "Avenir Next" !important;
 }
 
 #logo-img {
 	width: min(50vw, 347px);
+}
+
+.link-primary {
+  cursor: pointer;
+  color: #843BE6;
+}
+
+.header-social {
+  margin-left: 1.5em;
+  color: #843BE6;
+
+}
+
+.fa-twitter {
+  cursor: pointer;
+}
+
+.fa-discord {
+  cursor: pointer;
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -4164,10 +4187,6 @@ img.img-rounded-main{
   
   #clockdiv > .colon{
     font-size:30px;
-  }
-
-  .container {
-    padding: 20px 10px 10px 10px;
   }
 
   .spacer-double {
@@ -4195,6 +4214,14 @@ img.img-rounded-main{
     padding: 10px 2%;
   }
 
+  .header-social {
+    margin-left: 1em;
+  }
+
+  .navbar-title .navbar-item {
+    display: inline-block !important;
+  }
+
 }
 
 @media only screen and (min-width: 600px) and (max-width: 767px) { 
@@ -4210,10 +4237,6 @@ img.img-rounded-main{
   
   #clockdiv > .colon{
     font-size:40px;
-  }
-
-  .container {
-    padding: 20px 10px 10px 10px;
   }
 
   .spacer-double {
@@ -4240,6 +4263,13 @@ img.img-rounded-main{
     padding: 10px 2%;
   }
 
+  .header-social {
+    margin-left: 1em;
+  }
+
+  .navbar-title .navbar-item {
+    display: inline-block !important;
+  }
 
 }
 
@@ -4255,10 +4285,6 @@ img.img-rounded-main{
   
   #clockdiv > .colon{
     font-size:50px;
-  }
-
-  .container {
-    padding: 20px 10px 10px 10px;
   }
 
   .spacer-double {
@@ -4281,11 +4307,29 @@ img.img-rounded-main{
     padding: 10px 2%;
   }
 
+  .header-social {
+    margin-left: 1em;
+  }
+
+  .navbar-title .navbar-item {
+    display: inline-block !important;
+  }
+
 }
 
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) and (max-width: 1200px) { #clockdiv { grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;} #clockdiv .middle { display: inline; } .centerthis {grid-template-columns: 1fr 4fr 1fr;}}
+@media only screen and (min-width: 992px) and (max-width: 1200px) { #clockdiv { grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;} #clockdiv .middle { display: inline; } .centerthis {grid-template-columns: 1fr 4fr 1fr;}
+
+.header-social {
+  margin-left: 1em;
+}
+
+.navbar-title .navbar-item {
+  display: inline-block !important;
+}
+
+}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) { #clockdiv { grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; } #clockdiv .middle { display: inline; } .centerthis {grid-template-columns: 3fr 3fr 3fr;}}

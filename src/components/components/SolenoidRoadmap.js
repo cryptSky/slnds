@@ -8,7 +8,9 @@ import Typography from '@mui/material/Typography';
 import { styled } from '@mui/styles';
 import { StepIcon } from '@mui/material';
 
-
+const MyTypography = styled(Typography)({
+  fontFamily: "Avenir Next",
+});
 
 const MyStepLabel = styled(StepLabel)({
   color: '#C4C4C4',
@@ -35,9 +37,6 @@ const YellowStepIcon = styled(StepIcon)({
   '& .Mui-completed': {color: "#D4AF37"},
 });
 
-const MyStepConent = styled(StepContent)({
-  borderLeft: 'none'
-});
 
 const steps = [
   {
@@ -98,10 +97,10 @@ function SolenoidRoadmap() {
               StepIconComponent={step.icon}
               icon=" "
             >
-              <Typography fontSize="1.5em" marginLeft="1em">{step.label}</Typography>
+              <MyTypography fontSize="1.5em" marginLeft="1em">{step.label}</MyTypography>
             </MyStepLabel>
             <StepContent  sx={{ borderLeft: "none;" }}>
-              <Typography marginLeft="2em">{step.description}</Typography>
+              <MyTypography marginLeft="2em"  fontSize="1.2em">{step.description}</MyTypography>
               <Box sx={{ mb: 2 }}>
 
               </Box>
