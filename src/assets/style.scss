@@ -44,7 +44,7 @@
 $white: #fff;
 $gray: #bbb;
 $black: #111;
-$general: #a2a2a2;
+$general: #494C55;
 $black_soft: #333;
 $black_col: #2e333c;
 $black_more: #0f0f0f;
@@ -60,11 +60,11 @@ $color_more: #FC202C;
 /*general*/
 html {scroll-behavior: auto;}
 body {
-  font-family: "Avenir Next" !important;
+  font-family: "Inter" !important;
   font-weight: 300;
   font-size: 16px;
   color: $general;
-  background: #01030d;
+  background: linear-gradient(249.93deg, #E5E5E5 2.65%, rgba(229, 229, 229, 0.18) 97.52%);;
   word-spacing: 0px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -138,7 +138,6 @@ section{
     text-transform: uppercase !important;
 }
 .white{
-  color: $black;
   background: $white;
 }
 .black_more{
@@ -648,24 +647,27 @@ p.lead {
     font-weight: 400;
 }
 .btn-main {
+    background: linear-gradient(241.77deg, #EE7ADD 29.4%, #881DEB 118.81%);
+    border-radius: 9px;
+    color: $white;
+
     display: block;
     width: max-content;
     text-align: center;
-    color: #fff !important;
-    background: #D9AF2A;
-    border-radius: 30px;
     letter-spacing: normal;
     outline: 0;
-    font-weight: 800;
+    font-weight: 400;
+    font-family: Inter;
+    line-height: 19px;
     text-decoration: none;
-    padding: 8px 40px;
-    font-size: 14px;
+    padding: 20px 60px;
+    font-size: 16px;
     border: none;
     cursor: pointer;
     box-shadow: 2px 2px 20px 0px rgba(131, 100, 226, 0);
     transition: all 0.3s ease;
     &:hover{
-      box-shadow: 2px 2px 20px 0px #D9AF2A;
+      box-shadow: 1px 1px 10px 0px #9B51E0;
       transition: all 0.3s ease;
     }
     &.inline{
@@ -812,7 +814,12 @@ p.lead {
     transition: all 0.6s ease;
     &.white{
       a{
-        color: $white;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 18px;  
+        color: rgba(73, 76, 85, 0.58);;
       }
       .btn{
         color: $white;
@@ -872,7 +879,7 @@ p.lead {
           top: 22px;
           display: block;
           width: 0;
-          border-bottom: 2px solid $color;
+          border-bottom: 2px solid rgba(136, 29, 235, 0.69);
           transition: .7s;
         }
         &:hover{
@@ -4200,23 +4207,30 @@ img.img-rounded-main{
 }
 
 .col-gray {
-  color: #C4C4C4;
-  font-size: 22px;
-  font-family: "Avenir Next" !important;
+  color: #494C55;
+  font-family: "Inter" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150.69%;
+  /* or 27px */
+
+  text-align: center;
+  letter-spacing: 1.2px;
 }
 
 .white-gray {
   color: #f2f2f2;
-  font-family: "Avenir Next" !important;
+  font-family: "Inter" !important;
 }
 
 .solenoid-title {
-  font-family: "Avenir Next" !important;
+  font-family: "Inter" !important;
 }
 
 #logo-img {
-	width: min(50vw, 347px);
-  margin-bottom: 5px;
+  width: min(50vw, 40px);
+  margin-bottom: 15px;
 }
 
 .header-social {
@@ -4230,13 +4244,11 @@ img.img-rounded-main{
 
 .header-social-icon {
   margin-left: 1.5em;
-  background: #843BE6;
   text-shadow: none;
-  color: #fff;
+  color: #222429;
   padding: 3px 10px 3px 10px;
   text-align: center;
-  font-size: 24px;
-  border-radius: 5px;
+  font-size: 30px;
   margin: 0 5px 0 15px;
   transition: 0.3s;
 

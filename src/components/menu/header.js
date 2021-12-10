@@ -42,7 +42,7 @@ const Header = function() {
               <div className='navbar-item'>
               
                   <img
-                    src="./img/solenoids_logo.png"
+                    src="./img/logo_small.png"
                     className="img-fluid"
                     id="logo-img"
                     alt="#"

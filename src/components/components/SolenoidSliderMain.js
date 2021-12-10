@@ -45,31 +45,59 @@ const submit = () => {
 };
 
 const slidermainparticle= () => (
- <div className="container">
-    <div className="row align-items-center">
-          <div className="col-md-6">
+ <div className="container-fluid">
+    <div className="row">
+          <div className="col-md-12">
               <div className="spacer-single"></div>
+
+
+
               <h6> <span className="text-uppercase color"></span></h6>
               <Reveal className='onStep' keyframes={fadeInUp} delay={300} duration={900} triggerOnce>
-              <h1 className="solenoid-title">SOLENOIDS</h1>
-              <h1 className="solenoid-title">HAVE ARRIVED</h1>
+                  <div className="text-center">
+                    <img src="/img/logo.png" className="img-fluid" />
+                  </div>
               </Reveal>
+              <div className="spacer-double"></div>
               <Reveal className='onStep' keyframes={fadeInUp} delay={600} duration={900} triggerOnce>
-              <p className="col-gray">
+              <div className="text-center col-gray">
+              <p className="">
               A collection of 3,333 unique characters who distribute energy on the Solana blockchain. </p>
-              <p className="col-gray">Each Solenoid will mint for 1 SOL. 
+              <p className="">Each Solenoid will mint for 1 SOL. 
               </p>
+              </div>
               </Reveal>
-              <div className="spacer-10"></div>
-              <Reveal className='onStep d-inline' keyframes={inline} delay={800} duration={900} triggerOnce>
-              <div onClick={submit} className="btn-main">MINT</div>
-              <div className="mb-sm-30"></div>
-              </Reveal>
+              <div className="spacer-double"></div>
+              <div className="d-flex justify-content-center">
+                <Reveal className='onStep' keyframes={inline} delay={800} duration={900} triggerOnce>
+                <div className="text-center column">
+                  <div onClick={submit} className="btn-main text-center">MINT</div>
+                  <div className="mb-sm-30"></div>
+                  </div>
+                </Reveal>
+              </div>
 
           </div>
-          <div className="col-md-6 xs-hide mt-10">
-          <Reveal className='onStep d-inline' keyframes={inline} delay={300} duration={1200} triggerOnce>
-            <div className="slider-image"><iframe src="https://giphy.com/embed/J39lmbcVo74gC6SDCe" width="100%" height="100%" frameBorder="0" className="giphy-embed position-absolute" allowFullScreen></iframe></div>
+          <div className="col-md-12 xs-hide mt-10">
+          <Reveal className='onStep' keyframes={inline} delay={300} duration={1200} triggerOnce>
+            <div className="imgContainer">
+              <img src="/img/solenoids/jumbotron/1.png" className="img-fluid" />
+            </div>
+            <div className="imgContainer">
+              <img src="/img/solenoids/jumbotron/1.png" className="img-fluid" />
+            </div>
+            <div className="imgContainer">
+              <img src="/img/solenoids/jumbotron/1.png" className="img-fluid" />
+            </div>
+            <div className="imgContainer">
+              <img src="/img/solenoids/jumbotron/1.png" className="img-fluid" />
+            </div>
+            <div className="imgContainer">
+              <img src="/img/solenoids/jumbotron/1.png" className="img-fluid" />
+            </div>
+            <div className="imgContainer">
+              <img src="/img/solenoids/jumbotron/1.png" className="img-fluid" />
+            </div>
           </Reveal>
           </div>
       </div>

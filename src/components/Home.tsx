@@ -203,9 +203,9 @@ const GlobalStyles = createGlobalStyle`
     }
   }
   .btn-main{
-    background: #D4AF37;
+
     &:hover{
-      box-shadow: 2px 2px 20px 0px #D4AF37;
+      //box-shadow: 2px 2px 20px 0px #D4AF37;
     }
   }
   p.lead{
@@ -278,20 +278,70 @@ const GlobalStyles = createGlobalStyle`
     }
   }
 
-  header#myHeader.navbar.white {
-    background: #01030d;
-  }
-
   .navbar.white .btn {
     color: #f2f2f2;
-}
+  }
 
   #myHeader .btn-main {
-    background: #D4AF37;
-    &:hover{
-      box-shadow: 2px 2px 20px 0px #D4AF37;
+    border-radius:30px; 
+    position:relative;
+    background: none;
+    color: rgba(73, 76, 85, 0.58);
+    line-height: 18px;
+    font-size: 14px;
+    padding: 8px 40px;
+    
+    &:before {
+      content:"";
+      position:absolute;
+      top:0;
+      left:0;
+      right:0;
+      bottom:0;
+
+      border-radius:30px; 
+      padding:2px; 
+      background:linear-gradient(180deg, rgba(238, 122, 221, 0.69) 0%, rgba(136, 29, 235, 0.69) 100%); 
+      -webkit-mask: 
+         linear-gradient(#fff 0 0) content-box, 
+         linear-gradient(#fff 0 0);
+      -webkit-mask-composite: destination-out; 
+      mask-composite: exclude; 
     }
+
+    &:hover{
+      box-shadow: 1px 1px 10px 0px #9B51E0;
+      transition: all 0.3s ease;
+    }
+  
   }
+
+  .row .column {
+    display: flex;
+    flex: 1;
+    margin-left: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .imgContainer{
+    float:left;
+  }
+
+  .imgContainer img {
+    max-width: inherit;
+    max-height: inherit;
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+  }
+
+  .jumbo_bottom {
+    justify-content: flex-end;
+    flex-direction: column;
+  }
+  
+
 `;
 
 // Random component
@@ -354,14 +404,18 @@ const renderer = ({ days, hours, minutes, seconds, completed } : {days: any, hou
 
 <div>
   <GlobalStyles />
-    <Element name="top"></Element>
-      <section className="container" >
-      <div className='row align-items-center'>
+      <section className="jumbotron no-bg">
+         <Element name="top"></Element>
+         <div className='row align-items-center'>
           
           <div className="spacer-double"></div>
 
         </div> 
          <SolenoidSliderMain/>
+      </section>
+    
+      <section className="container" >
+
       </section>
 
       <section className="container" >
