@@ -4115,6 +4115,7 @@ img.img-rounded-main{
 }
 
 
+
 .custom-ui {
   text-align: center;
   width: 500px;
@@ -4164,8 +4165,8 @@ img.img-rounded-main{
   font-family: sans-serif;
 
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-gap:5px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap:15px;
   //width:fit-content;
   font-weight: 100;
   text-align: center;
@@ -4175,19 +4176,17 @@ img.img-rounded-main{
 }
 #clockdiv div{
   
-  background: #01030d;
+  //background: #01030d;
 }
 
 #clockdiv div > .number{
   padding: 0px 30px 0px 30px;
-  border-radius: 40px;
   font-size:80px;
   //width: fit-content;
-  width: auto;
-  background: #D4D4D4;
+  width: 220px;
   font-weight: bold;
-  color: #843BE6;
-  font-family: "Avenir Next" !important;
+  background: linear-gradient(180deg, rgba(34, 36, 41, 0.15) 0%, rgba(34, 36, 41, 0.15) 100%);
+  color: #dededf;
 }
 
 #clockdiv > .colon{
@@ -4198,7 +4197,7 @@ img.img-rounded-main{
 .smalltext{
   padding: 4px 0px 5px 0px;
   font-size:16px;
-  font-family: "Avenir Next" !important;
+  color: white;
 }
 
 .partI {
@@ -4206,18 +4205,6 @@ img.img-rounded-main{
   font-family: "Avenir Next" !important;
 }
 
-.col-gray {
-  color: #494C55;
-  font-family: "Inter" !important;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 150.69%;
-  /* or 27px */
-
-  text-align: center;
-  letter-spacing: 1.2px;
-}
 
 .white-gray {
   color: #f2f2f2;
@@ -4226,6 +4213,32 @@ img.img-rounded-main{
 
 .solenoid-title {
   font-family: "Inter" !important;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 11px;
+
+  color: #494C55;
+}
+
+.solenoid-title-white {
+  font-family: "Inter" !important;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 11px;
+
+  color: #fff;
+}
+
+.countdown-title {
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 85px;
+  text-align: center;
+  letter-spacing: 1.2px;
+  
+  color: #FFFFFF;
 }
 
 #logo-img {
@@ -4236,6 +4249,80 @@ img.img-rounded-main{
 .header-social {
   margin-left: 15px;
 }
+
+ol,ul {
+  list-style : none;
+}
+
+ul li::before {
+  content: "\00a0\00a0\00a0\00a0";
+  font-size: 20px;
+  border: 2px solid #9B51E0;
+  border-radius: 8px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+ul { 
+  white-space: nowrap;
+  //list-style-position:inside;
+  padding: 0 40px; }
+li img { 
+  vertical-align: middle;
+  display: inline-block; 
+  }
+li div.roadmap { 
+  white-space: normal;
+  vertical-align: middle;
+  display: inline-block;
+
+  margin: 20px 0px 20px 0px;
+  padding: 10px 10px;
+
+  border: 1px solid #9B51E0;
+  box-sizing: border-box;
+  border-radius: 19px;
+
+  filter: drop-shadow(0px 0px 10px rgba(136, 29, 235, 0.4));
+  width: -webkit-fill-available;
+
+}
+
+li > span {
+
+    background-color: #9B51E0;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 5%;
+
+}
+
+li:after {
+  display: list-item;
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  border-left: 1px solid black;
+}
+
+ul li div.verticalLine{
+  display: list-item;
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  border-left: 1px solid black;
+  margin-left: 0.8em;
+  
+  z-index: -1;
+}
+ul li:last-child div.verticalLine{
+  display : none;   
+}
+
+
 
 .link-primary {
   cursor: pointer;
@@ -4293,7 +4380,13 @@ section {
 }
 
   .col-gray {
+    font-style: normal;
+    font-weight: normal;
     font-size: 18px;
+    line-height: 35px;
+    /* or 194% */
+
+    color: #494C55;
   }
 
   #clockdiv div > .number {
@@ -4452,7 +4545,7 @@ section {
 
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) and (max-width: 1200px) { #clockdiv { grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;} #clockdiv .middle { display: inline; } 
+@media only screen and (min-width: 992px) and (max-width: 1200px) { #clockdiv { grid-template-columns: 1fr 1fr 1fr 1fr;} #clockdiv .middle { display: inline; } 
 
 .header-social {
   margin-left: 1em;
@@ -4470,7 +4563,7 @@ section {
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) and (max-width: 1920) { #clockdiv { grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; } #clockdiv .middle { display: inline; } 
+@media only screen and (min-width: 1200px) and (max-width: 1920) { #clockdiv { grid-template-columns: 1fr 1fr 1fr 1fr; } #clockdiv .middle { display: inline; } 
 
   section {
     padding-top: 50px;
@@ -4480,7 +4573,7 @@ section {
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1920px) { #clockdiv { grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; } #clockdiv .middle { display: inline; } 
+@media only screen and (min-width: 1920px) { #clockdiv { grid-template-columns: 1fr 1fr 1fr 1fr; } #clockdiv .middle { display: inline; } 
 
 section {
   padding-top: 50px;

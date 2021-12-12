@@ -45,7 +45,7 @@ const submit = () => {
 };
 
 const slidermainparticle= () => (
- <div className="container-fluid">
+
     <div className="row">
           <div className="col-md-12">
               <div className="spacer-single"></div>
@@ -78,29 +78,29 @@ const slidermainparticle= () => (
               </div>
 
           </div>
-          <div className="col-md-12 xs-hide mt-10">
+          <div className="col-lg-12 xs-hide mt-10 jumbo-bottom">
           <Reveal className='onStep' keyframes={inline} delay={300} duration={1200} triggerOnce>
             <div className="imgContainer">
               <img src="/img/solenoids/jumbotron/1.png" className="img-fluid" />
             </div>
             <div className="imgContainer">
-              <img src="/img/solenoids/jumbotron/1.png" className="img-fluid" />
+              <img src="/img/solenoids/jumbotron/2.png" className="img-fluid" />
             </div>
             <div className="imgContainer">
-              <img src="/img/solenoids/jumbotron/1.png" className="img-fluid" />
+              <img src="/img/solenoids/jumbotron/3.png" className="img-fluid" />
             </div>
             <div className="imgContainer">
-              <img src="/img/solenoids/jumbotron/1.png" className="img-fluid" />
+              <img src="/img/solenoids/jumbotron/6.png" className="img-fluid" />
             </div>
             <div className="imgContainer">
-              <img src="/img/solenoids/jumbotron/1.png" className="img-fluid" />
+              <img src="/img/solenoids/jumbotron/5.png" className="img-fluid" />
             </div>
             <div className="imgContainer">
-              <img src="/img/solenoids/jumbotron/1.png" className="img-fluid" />
+              <img src="/img/solenoids/jumbotron/4.png" className="img-fluid" />
             </div>
           </Reveal>
           </div>
       </div>
-    </div>
+
 );
 export default slidermainparticle;

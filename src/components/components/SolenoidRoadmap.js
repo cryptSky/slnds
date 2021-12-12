@@ -9,7 +9,7 @@ import { styled } from '@mui/styles';
 import { StepIcon } from '@mui/material';
 
 const MyTypography = styled(Typography)({
-  fontFamily: "Avenir Next",
+  fontFamily: "Inter",
 });
 
 const MyStepLabel = styled(StepLabel)({
@@ -19,6 +19,11 @@ const MyStepLabel = styled(StepLabel)({
   '& .Mui-active': {color: "#C4C4C4"},
   '& .Mui-disabled': {color: "#C4C4C4"},
   '& .Mui-completed': {color: "#C4C4C4"},
+
+  background: "#FDFCFF",
+  border: "1px solid #9B51E0",
+  "box-sizing": "border-box",
+  "border-radius": "19px",
 });
 
 const MyStepIcon = styled(StepIcon)({
@@ -90,24 +95,21 @@ function SolenoidRoadmap() {
 
   return (
     <Box>
-      <Stepper activeStep={0} orientation="vertical" connector={false}>
+      
+      <ul>
         {steps.map((step, index) => (
-          <Step key={step.label} expanded sx={{mb: 2}}>
-            <MyStepLabel
-              StepIconComponent={step.icon}
-              icon=" "
-            >
-              <MyTypography fontSize="1.5em" marginLeft="1em">{step.label}</MyTypography>
-            </MyStepLabel>
-            <StepContent  sx={{ borderLeft: "none;" }}>
-              <MyTypography marginLeft="2em"  fontSize="1.2em">{step.description}</MyTypography>
-              <Box sx={{ mb: 2 }}>
+             <li>
+               <span></span>
+             <div className="roadmap">
+                <span className="roadmap-label">{step.label}</span><br />
+                <span className="roadmap-description">{step.description}</span>
+              </div>
+              {/*<div className="verticalLine"></div>*/}
+              
+            </li>
 
-              </Box>
-            </StepContent>
-          </Step>
         ))}
-      </Stepper>
+      </ul>
     </Box>
   );
 }

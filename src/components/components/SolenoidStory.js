@@ -28,23 +28,20 @@ const SolenoidStory= () => (
     <div className="row align-items-center">
           <div className="col-md-6">
               <div className="spacer-single"></div>
-              <Reveal className='onStep' keyframes={fadeInUp} delay={0} duration={600} triggerOnce>
-              <h6 className=""><span className="text-uppercase color">Here is</span></h6>
-              </Reveal>
+
               <div className="spacer-10"></div>
               <Reveal className='onStep' keyframes={fadeInUp} delay={300} duration={600} triggerOnce>
               <h1 className="solenoid-title">The Solenoid Story</h1>
               </Reveal>
-              <Reveal className='onStep' keyframes={fadeInUp} delay={300} duration={600} triggerOnce>
-              <h2 className="partI">[Part I]</h2>
-              </Reveal>
               <Reveal className='onStep' keyframes={fadeInUp} delay={600} duration={600} triggerOnce>
-              <p className="col-gray">
+              <div className="spacer-double"></div>
+              <div className="col-gray" style={{width: "400px", paddingLeft: "50px"}}>
+
               Solenoids pride themselves on their ability to take electrical motion 
                and convert
-              it into force—allowing each Solenoid to represent a unique magnetic field within the Metaverse, </p>
-              <p className="col-gray"> but they are not alone....
-              </p>
+              it into force—allowing each Solenoid to represent a unique magnetic field within the Metaverse,
+              but they are not alone....
+              </div>
               </Reveal>
               <div className="spacer-10"></div>
           </div>

@@ -30,6 +30,7 @@ import SolenoidRoadmap from "./components/SolenoidRoadmap";
 import SolenoidStory from "./components/SolenoidStory";
 
 
+
 const ConnectButton = styled(WalletDialogButton)``;
 
 const CounterText = styled.span``; // add your styles here
@@ -329,17 +330,48 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .imgContainer img {
-    max-width: inherit;
-    max-height: inherit;
-    height: inherit;
-    width: inherit;
-    object-fit: cover;
+    width: 220px;
+    height: 220px;
   }
 
-  .jumbo_bottom {
-    justify-content: flex-end;
-    flex-direction: column;
+  .vertical-align {
+    display: table;
+    width: 100%;
   }
+  .jumbo-bottom {
+    position: absolute;
+    padding: 0;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 1320px;
+  }
+
+  .countdown-timer {
+    background: linear-gradient(150deg, #FD8BFF 10%, #881DEB 77%);
+    height: 100vh;
+  }
+
+  .svglines {
+    background: url("./img/topology.svg");
+    background-position: center;
+    height: 100vh;
+    padding: 90px 0;
+  }
+
+  .faq {
+    background: linear-gradient(150deg, #FD8BFF 10%, #881DEB 77%);
+    height: 100vh;
+  }
+
+  .svglines-faq {
+    background: url("./img/topology-faq.svg");
+    background-position: center;
+    height: 100vh;
+    padding: 90px 0;
+  }
+
   
 
 `;
@@ -366,22 +398,17 @@ const renderer = ({ days, hours, minutes, seconds, completed } : {days: any, hou
               <div className="smalltext">Days</div>
             </div>
 
-            <div className="colon">:</div>
-
             <div>
               <div className="number">{hours}</div>              
               <div className="smalltext">Hours</div>
             </div> 
             
-            <div className="colon middle">:</div>
-
             <div>
               <div className="number">{minutes}</div>
               <div className="smalltext">Minutes</div>
             </div> 
 
-            <div className="colon">:</div>
-            
+       
             <div>
               <div className="number">{seconds}</div>
               <div className="smalltext">Seconds</div>
@@ -404,24 +431,23 @@ const renderer = ({ days, hours, minutes, seconds, completed } : {days: any, hou
 
 <div>
   <GlobalStyles />
-      <section className="jumbotron no-bg">
-         <Element name="top"></Element>
-         <div className='row align-items-center'>
+      <section className="container" style={{paddingBottom: "0px", paddingTop: "0px"}} >
+        <div className="jumbotron no-bg">
+          <Element name="top"></Element>
+          <div className='row align-items-center'>
           
           <div className="spacer-double"></div>
 
         </div> 
          <SolenoidSliderMain/>
+
+        </div>
       </section>
     
-      <section className="container" >
-
-      </section>
-
-      <section className="container" >
-      
-      <div className='row'>
-          <h1 className='text-center launch-shadow solenoid-title'>Time Till Launch</h1>
+      <section className="container-fluid countdown-timer" style={{paddingBottom: "0px", paddingTop: "0px"}}>
+        <div className="svglines">
+        <div className='row'>
+          <h1 className='text-center countdown-title solenoid-title'>COUNTDOWN TO LAUNCH</h1>
           <div className='col-lg-12 mb-2 justify-content-center'>
           <Countdown
             date={new Date(Date.UTC(2021, 11, 22, 17, 0, 0))}
@@ -430,21 +456,20 @@ const renderer = ({ days, hours, minutes, seconds, completed } : {days: any, hou
           </div>
         </div> 
 
-
-      </section>
-
-      <section className='container no-top no-bottom'>
         <div className='row'>
-          
-          <div className='col-lg-12 mb-2'>
-              
+        <div className='col-lg-2 mb-2 justify-content-center'></div>
+          <div className='col-lg-8 mb-2 justify-content-center'>
+          <SolenoidImages/>
           </div>
+          <div className='col-lg-2 mb-2 justify-content-center'></div>
         </div> 
-        <SolenoidImages/>
+        
+        </div>     
+
       </section>
 
-    <Element name="story"></Element>
-   <section className="container">
+   <Element name="story"></Element>
+   <section className="container" >
       
       <SolenoidStory/>
    </section>
@@ -461,14 +486,19 @@ const renderer = ({ days, hours, minutes, seconds, completed } : {days: any, hou
   </section>
 
   <Element name="faq"></Element>
-  <section className='container'>
-  <h1 className="launch-shadow solenoid-title">FAQ</h1>
-    <div className='row'>
+  <section className='container-fluid faq'>
+  <div className="svglines-faq">
+  <div className="container">
+  <h1 className="solenoid-title-white" >FAQ</h1>
+  <div className="spacer-double"></div>
+    <div className='row mt-8'>
 
       <div className='col-md-12'>
         <SolenoidFAQ />
       </div>
     </div>
+    </div>
+  </div>
   </section>
 
 
