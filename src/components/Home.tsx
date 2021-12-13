@@ -361,7 +361,7 @@ const renderer = ({ days, hours, minutes, seconds, completed } : {days: any, hou
           <div className='row align-items-center'>          
           <div className="spacer-double"></div>
 
-          <div className="spacers">
+          <div className="">
             <div className="spacer-double"></div>
             <div className="spacer-double"></div>
             <div className="spacer-double"></div>
