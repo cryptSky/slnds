@@ -4509,10 +4509,6 @@ footer.footer-light {
 /* Extra small devices (phones, 400px and down) */
 @media only screen and (max-width: 400px) {
   
-  .spacers {
-    display: none;
-  }
-
   #logo-img {
     margin-bottom: 5px;
   }
@@ -4721,10 +4717,6 @@ section {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 400px) and (max-width: 600px) { 
-
-  .spacers {
-    display: none;
-  }
 
   #logo-img {
     margin-bottom: 5px;
@@ -5108,9 +5100,7 @@ section {
   
   }
 
-  .jumbo-bottom {
-    width: 450px;;
-  }
+
 
 }
 
@@ -5275,10 +5265,6 @@ section {
     width: 100%;
     //width: 50px;
   
-  }
-
-  .jumbo-bottom {
-    width: 680px;;
   }
 
 }
