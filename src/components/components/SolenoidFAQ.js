@@ -12,7 +12,7 @@ const Accordion = styled((props) => (
 ))(({ theme }) => ({
 
   backgroundColor: 'transparent',
-  //border: `1px solid ${theme.palette.divider}`,
+  borderTop: `1px solid white`,
   '&:not(:last-child)': {
     borderBottom: 0,
   },
@@ -23,7 +23,7 @@ const Accordion = styled((props) => (
 
 const AccordionSummary = styled((props) => (
   <MuiAccordionSummary
-    expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '0.9rem', color: "#C4C4C4" }} />}
+    //expandIcon={<ArrowForwardIosSharpIcon sx={{ fontSize: '0.9rem', color: "#C4C4C4" }} />}
     {...props}
   />
 ))(({ theme }) => ({
@@ -40,7 +40,7 @@ const AccordionSummary = styled((props) => (
 const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
   padding: theme.spacing(2),
   marginTop: theme.spacing(2),
-  //borderTop: '1px solid rgba(172, 140, 37, .125)',
+  //borderTop: '1px solid rgba(255, 255, 255)',
   backgroundColor: 'transparent',
 }));
 

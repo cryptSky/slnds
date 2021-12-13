@@ -685,8 +685,8 @@ p.lead {
   width: max-content;
   text-align: center;
   color: #fff !important;
-  background: #D9AF2A;
-  border-radius: 30px;
+  background: linear-gradient(233deg, #EF76EA 5%, #B516FF 100%);
+  border-radius: 10px;
   letter-spacing: normal;
   outline: 0;
   font-weight: 800;
@@ -698,7 +698,7 @@ p.lead {
   box-shadow: 2px 2px 20px 0px rgba(131, 100, 226, 0);
   transition: all 0.3s ease;
   &:hover{
-    box-shadow: 2px 2px 20px 0px #D9AF2A;
+    box-shadow: 2px 2px 20px 0px #B516FF;
     transition: all 0.3s ease;
   }
   &.inline{
@@ -743,7 +743,7 @@ p.lead {
   }
   .dropdown-toggle::after{
     font-family: FontAwesome;
-    color: rgba(255, 255, 255, .5);
+    //color: rgba(255, 255, 255, .5);
     padding-left: 2px;
     font-size: 8px;
     top: -1px;
@@ -945,7 +945,7 @@ p.lead {
           top: 28px;
         }
         .dropdown-custom.btn{
-          color: $white;
+          //color: $white;
           width: 100%;
           text-align: left;
           &::after{
@@ -1049,10 +1049,10 @@ p.lead {
           background: #212428;
           box-shadow: 0 4px 20px 0 rgba(10,10,10,.8);
           .btn{
-            color: $white;
+            color: $black;
           }
           a{
-            color: $white;
+            color: $black;
           }
         }
       }
@@ -4015,7 +4015,7 @@ img.img-rounded-main{
   .navbar{
     top: 0;
     &.white a{
-      color: $white;
+      color: $black;
     }
   }
   #myHeader .countdown {
@@ -4120,9 +4120,9 @@ img.img-rounded-main{
   text-align: center;
   width: 500px;
   padding: 40px;
-  background: #01030d;
+  background: #FDFCFF;
   box-shadow: 0 20px 75px rgb(0 0 0 / 23%);
-  color: #D9AF2A;
+  color: #494C55;
   @media (max-width: 400px) {
     /* Your mobile styles here */
     width: 400px;
@@ -4200,9 +4200,8 @@ img.img-rounded-main{
   color: white;
 }
 
-.partI {
-  color: #D9AF2A;
-  font-family: "Avenir Next" !important;
+.imgContainer{
+  float:left;
 }
 
 
@@ -4215,8 +4214,7 @@ img.img-rounded-main{
   font-family: "Inter" !important;
   font-style: normal;
   font-weight: 800;
-  font-size: 64px;
-  line-height: 11px;
+  font-size: 60px;
 
   color: #494C55;
 }
@@ -4225,8 +4223,7 @@ img.img-rounded-main{
   font-family: "Inter" !important;
   font-style: normal;
   font-weight: 800;
-  font-size: 64px;
-  line-height: 11px;
+  font-size: 60px;
 
   color: #fff;
 }
@@ -4242,7 +4239,7 @@ img.img-rounded-main{
 }
 
 #logo-img {
-  width: min(50vw, 40px);
+  width: min(10vw, 40px);  
   margin-bottom: 15px;
 }
 
@@ -4276,14 +4273,14 @@ li div.roadmap {
   vertical-align: middle;
   display: inline-block;
 
-  margin: 20px 0px 20px 0px;
-  padding: 10px 10px;
+  margin: 40px 0px 20px 0px;
+  padding: 30px 20px;
 
-  border: 1px solid #9B51E0;
+  border: 2px solid #9B51E0;
   box-sizing: border-box;
-  border-radius: 19px;
+  border-radius: 18px;
 
-  filter: drop-shadow(0px 0px 10px rgba(136, 29, 235, 0.4));
+  //filter: drop-shadow(0px 0px 10px rgba(136, 29, 235, 0.4));
   width: -webkit-fill-available;
 
 }
@@ -4353,8 +4350,477 @@ ul li:last-child div.verticalLine{
   cursor: pointer;
 }
 
+.navbar.white .btn {
+  color: rgba(73,76,85,0.58);
+}
+
+#myHeader .btn-main {
+  border-radius:30px; 
+  position:relative;
+  background: none;
+  color: rgba(73, 76, 85, 0.58);
+  line-height: 18px;
+  font-size: 14px;
+  padding: 8px 40px;
+  
+  &:before {
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+
+    border-radius:30px; 
+    padding:2px; 
+    background:linear-gradient(180deg, rgba(238, 122, 221, 0.69) 0%, rgba(136, 29, 235, 0.69) 100%); 
+    -webkit-mask: 
+       linear-gradient(#fff 0 0) content-box, 
+       linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out; 
+    mask-composite: exclude; 
+  }
+
+  &:hover{
+    box-shadow: 1px 1px 10px 0px #9B51E0;
+    transition: all 0.3s ease;
+  }
+
+}
+
+.row .column {
+  display: flex;
+  flex: 1;
+  margin-left: 0;
+  max-width: 100%;
+  width: 100%;
+}
+
+
+.vertical-align {
+  display: table;
+  width: 100%;
+}
+.jumbo-bottom {
+  position: absolute;
+  padding: 0;
+  bottom: 0px;
+  margin: 0 auto;
+  width: 1320px;;
+}
+
+.jumbo-bottom img {
+  width: 220px;
+  height: 220px;
+}
+
+.countdown-timer {
+  background: linear-gradient(150deg, #FD8BFF 10%, #881DEB 77%);
+  display: block;
+  overflow: auto;
+}
+
+
+
+.join-box {
+  background: linear-gradient(14deg, #881DEB -4%, #FC6BFF 100%);
+  border-radius: 18px;
+  width: 100%;
+  height: 250px;
+  color: white;
+  padding: 40px 20px;
+      
+}
+
+.center-vertical {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.btn-footer {
+  padding: 10px 20px;
+  margin-top: 20px;
+  cursor: pointer;
+
+  background: rgba(229, 229, 229, 0.19);
+  backdrop-filter: blur(1.78146px);
+
+  border-radius: 6px;  
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 130%;
+
+  letter-spacing: 2px;
+}
+
+.footer-social {
+  cursor: pointer;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 4px;
+}
+
+footer {
+  padding: 10px 0 0 0;
+}
+
+footer.footer-light {
+  font-weight: 500;
+  font-size: 14px;
+
+  color: #222429;
+}
+
+
+.roadmap-description {
+  font-size: 18px;
+
+  font-weight: 400;
+  margin-top: 10px;
+
+  letter-spacing: 1.2px;
+}
+
+.roadmap-label {
+  font-weight: 500;
+  font-size: 30px;
+
+  margin-bottom: 30px;
+}
+
+.slider-text {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 150.69%;
+
+  text-align: center;
+  letter-spacing: 1.2px;  
+}
+
+/* Extra small devices (phones, 400px and down) */
+@media only screen and (max-width: 400px) {
+  
+  .spacers {
+    display: none;
+  }
+
+  #logo-img {
+    margin-bottom: 5px;
+  }
+
+  .navbar .navbar-item {
+    display: block;
+    padding: 5px 0;
+    
+  }
+
+  .btn-main {
+    padding: 10px 30px;
+    font-size: 14px;
+  }
+
+  .navbar .menu {
+    display: block;
+    padding: 0px 0px; 
+  }
+
+  .jumbotron .no-bg {
+    height: calc((100vh - 80px));
+    height: -o-calc(100% - 80px); /* opera */
+    height: -webkit-calc(100% - 80px); /* google, safari */
+    height: -moz-calc(100% - 80px); /* firefox */
+  }
+
+  .solenoid-title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  ul {
+    white-space: nowrap;
+    padding: 0 5px;
+  }
+
+  ul li::before {
+    display:none;   
+  }
+
+  li div.roadmap {
+    white-space: normal;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 15px 0px 10px 0px;
+    padding: 20px 20px;
+    border: 2px solid #9B51E0;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: -webkit-fill-available;
+  }
+
+  li > span {
+    display: none;
+  }
+
+  .roadmap-label {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .roadmap-description {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 5px;
+    //letter-spacing: 1.2px;
+  } 
+
+  .solenoid-title-white {
+    font-size: 30px;
+  }
+
+  .MuiAccordionSummary-content p {
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .MuiAccordionDetails-root p {
+    font-weight: 500;
+    font-size: 16px;
+    
+  }
+
+  .bottom div {
+    margin-bottom: 20px;
+  }
+
+  .join-box img {
+    margin-bottom: 20px;
+  }
+
+  .join-box h2 {
+    line-height: 35px;
+    font-size: 24px;
+  }
+
+  .header-social {
+    margin-left: 10px;
+  }
+
+  .header-social-icon {
+    padding: 4px 4px 2px 4px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 3px;
+    margin: 0 3px 0 7px;
+ 
+  }
+
+  #clockdiv {
+    width: auto;
+  }
+
+  
+section {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+  .col-gray {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    /* or 194% */
+
+    color: #494C55;
+  }
+
+  #clockdiv div > .number {
+    font-size: 30px; 
+    padding: 0px 5px 0px 5px; 
+    
+    font-weight: bold;
+  }  
+  
+  #clockdiv > .colon{
+    font-size:30px;
+  }
+
+  .spacer-double {
+    height: 20px;
+  }
+
+  .spacer-single {
+    height: 10px;
+  }
+
+  .copy, .mint-button {
+    display: none;
+  }
+
+  .subfooter {
+    text-align:center;
+  }
+
+  
+ .solenoid-title {
+    font-size: 30px;
+  }
+
+  .navbar .w-100-nav {
+    padding: 10px 2%;
+  }
+
+  .navbar-title .navbar-item {
+    display: inline-block !important;
+  }
+
+  .solenoid4 {
+    display: none;
+  }
+
+  .solenoid3 {
+    display: none;
+  }
+
+  
+  .solenoid1 {
+    display: none;
+  }
+
+  .solenoid5 {
+    display: none;
+  }
+  
+  .solenoid6 {
+    display: none;
+  }
+
+  #clockdiv div > .number{
+    width: 100%;
+    //width: 50px;
+  
+  }
+
+
+  .slider-text {
+    font-size: 14px;
+    line-height: normal;
+  }
+
+}
+
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) { 
+@media only screen and (min-width: 400px) and (max-width: 600px) { 
+
+  .spacers {
+    display: none;
+  }
+
+  #logo-img {
+    margin-bottom: 5px;
+  }
+
+  .navbar .navbar-item {
+    display: block;
+    padding: 5px 0;
+    
+  }
+
+  .btn-main {
+    padding: 10px 30px;
+    font-size: 14px;
+  }
+
+  .navbar .menu {
+    display: block;
+    padding: 0px 0px; 
+  }
+
+  .jumbotron.no-bg {
+    height: calc((100vh - 80px));
+  }
+
+  .solenoid-title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  ul {
+    white-space: nowrap;
+    padding: 0 5px;
+  }
+
+  ul li::before {
+    display:none;   
+  }
+
+  li div.roadmap {
+    white-space: normal;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 15px 0px 10px 0px;
+    padding: 20px 20px;
+    border: 2px solid #9B51E0;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: -webkit-fill-available;
+  }
+
+  li > span {
+    display: none;
+  }
+
+  .roadmap-label {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .roadmap-description {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 5px;
+    //letter-spacing: 1.2px;
+  } 
+
+  .solenoid-title-white {
+    font-size: 30px;
+  }
+
+  .MuiAccordionSummary-content p {
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .MuiAccordionDetails-root p {
+    font-weight: 500;
+    font-size: 16px;
+    
+  }
+
+  .bottom div {
+    margin-bottom: 20px;
+  }
+
+  .join-box img {
+    margin-bottom: 20px;
+  }
+
+  .join-box h2 {
+    line-height: 35px;
+    font-size: 24px;
+  }
+
 
   .header-social {
     margin-left: 10px;
@@ -4392,7 +4858,7 @@ section {
   #clockdiv div > .number {
     font-size: 30px; 
     padding: 0px 5px 0px 5px; 
-    border-radius: 10px;
+    
     font-weight: bold;
   }  
   
@@ -4429,9 +4895,135 @@ section {
     display: inline-block !important;
   }
 
+  .solenoid3 {
+    display: none;
+  }
+
+  
+  .solenoid1 {
+    display: none;
+  }
+
+  .solenoid6 {
+    display: none;
+  }
+
+  .solenoid5 {
+    display: none;
+  }
+
+  .solenoid4 {
+    display: none;
+  }
+
+
+  #clockdiv div > .number{
+    width: 100%;
+    //width: 50px;
+  
+  }
+
+
 }
 
-@media only screen and (min-width: 600px) and (max-width: 767px) { 
+@media only screen and (min-width: 600px) and (max-width: 768px) { 
+
+  #logo-img {
+    margin-bottom: 5px;
+  }
+
+  .jumbotron.no-bg {
+    height: calc((100vh - 80px));
+  }
+
+  .navbar .navbar-item {
+    display: block;
+    padding: 5px 0;
+    
+  }
+
+  .btn-main {
+    padding: 10px 30px;
+    font-size: 14px;
+  }
+
+  .navbar .menu {
+    display: block;
+    padding: 0px 0px; 
+  }
+
+  .solenoid-title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  ul {
+    white-space: nowrap;
+    padding: 0 5px;
+  }
+
+  .container {
+    margin-left: 10px;
+  }
+
+  .container .bottom {
+    margin-left: 30px;
+    
+  }
+
+  li div.roadmap {
+    white-space: normal;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 15px 0px 10px 0px;
+    padding: 20px 20px;
+    border: 2px solid #9B51E0;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: -webkit-fill-available;
+  }
+
+  .roadmap-label {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .roadmap-description {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 5px;
+    //letter-spacing: 1.2px;
+  } 
+
+  .solenoid-title-white {
+    font-size: 30px;
+  }
+
+  .MuiAccordionSummary-content p {
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .MuiAccordionDetails-root p {
+    font-weight: 500;
+    font-size: 16px;
+    
+  }
+
+  .bottom div {
+    margin-bottom: 20px;
+  }
+
+  .join-box img {
+    margin-bottom: 20px;
+  }
+
+  .join-box h2 {
+    line-height: 35px;
+    font-size: 24px;
+  }
+
 
   .header-social {
     margin-left: 10px;
@@ -4454,7 +5046,7 @@ section {
   #clockdiv div > .number {
     font-size: 40px; 
     padding: 0px 5px 0px 5px; 
-    border-radius: 15px;
+    
     font-weight: bold;
   }  
   
@@ -4494,9 +5086,129 @@ section {
     display: inline-block !important;
   }
 
+  .solenoid4 {
+    display: none;
+  }
+
+  .solenoid3 {
+    display: none;
+  }
+  
+  .solenoid1 {
+    display: none;
+  }
+
+  .solenoid5 {
+    display: none;
+  }
+
+  #clockdiv div > .number{
+    width: 100%;
+    //width: 50px;
+  
+  }
+
+
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) { 
+
+  #logo-img {
+    margin-bottom: 5px;
+  }
+
+  .jumbotron.no-bg {
+    height: calc((100vh - 80px));
+  }
+
+  .navbar .navbar-item {
+    display: block;
+    padding: 5px 0;
+    
+  }
+
+  .btn-main {
+    padding: 10px 30px;
+    font-size: 14px;
+  }
+
+  .navbar .menu {
+    display: block;
+    padding: 0px 0px; 
+  }
+
+  .solenoid-title {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  ul {
+    white-space: nowrap;
+    padding: 0 5px;
+  }
+
+  .container {
+    margin-left: 10px;
+  }
+
+  .container .bottom {
+    margin-left: 30px;
+    
+  }
+
+  li div.roadmap {
+    white-space: normal;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 15px 0px 10px 0px;
+    padding: 20px 20px;
+    border: 2px solid #9B51E0;
+    box-sizing: border-box;
+    border-radius: 20px;
+    width: -webkit-fill-available;
+  }
+
+  .roadmap-label {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .roadmap-description {
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 5px;
+    //letter-spacing: 1.2px;
+  } 
+
+  .solenoid-title-white {
+    font-size: 30px;
+  }
+
+  .MuiAccordionSummary-content p {
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  .MuiAccordionDetails-root p {
+    font-weight: 500;
+    font-size: 16px;
+    
+  }
+
+  .bottom div {
+    margin-bottom: 20px;
+  }
+
+  .join-box img {
+    margin-bottom: 10px;
+  }
+
+  .join-box h2 {
+    line-height: 35px;
+    font-size: 18px;
+  }
 
   section {
     padding-top: 30px;
@@ -4506,8 +5218,12 @@ section {
   #clockdiv div > .number {
     font-size: 50px; 
     padding: 5px 10px 5px 10px; 
-    border-radius: 20px;
+    
   }  
+
+  .jumbotron.no-bg {
+    height: calc((100vh - 80px));
+  }
   
   #clockdiv > .colon{
     font-size:50px;
@@ -4541,14 +5257,42 @@ section {
     display: inline-block !important;
   }
 
+  .solenoid4 {
+    display: none;
+  }
+
+  .solenoid3 {
+    display: none;
+  }
+  
+  .solenoid1 {
+    display: none;
+  }
+
+  #clockdiv div > .number{
+    width: 100%;
+    //width: 50px;
+  
+  }
+
 }
 
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) and (max-width: 1200px) { #clockdiv { grid-template-columns: 1fr 1fr 1fr 1fr;} #clockdiv .middle { display: inline; } 
+@media only screen and (min-width: 992px) and (max-width: 1200px) { #clockdiv .middle { display: inline; } 
+
+.jumbo-bottom {
+  width: 900px;;
+}
 
 .header-social {
   margin-left: 1em;
+}
+
+#clockdiv div > .number{
+  width: 100%;
+  //width: 50px;
+
 }
 
 .navbar-title .navbar-item {
@@ -4560,20 +5304,47 @@ section {
   padding-bottom: 40px;
 }
 
+.solenoid4 {
+  display: none;
+}
+
+.solenoid1 {
+  display: none;
+}
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) and (max-width: 1920) { #clockdiv { grid-template-columns: 1fr 1fr 1fr 1fr; } #clockdiv .middle { display: inline; } 
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {  #clockdiv .middle { display: inline; } 
+
+  .solenoid4 {
+    display: none;
+  }
 
   section {
     padding-top: 50px;
     padding-bottom: 50px;
   }
 
+  .jumbo-bottom {
+    width: 1100px;;
+  }
+
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1920px) { #clockdiv { grid-template-columns: 1fr 1fr 1fr 1fr; } #clockdiv .middle { display: inline; } 
+@media only screen and (min-width: 1401px) and (max-width: 1919px) {  #clockdiv .middle { display: inline; } 
+
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1920px) {  #clockdiv .middle { display: inline; } 
 
 section {
   padding-top: 50px;

@@ -1,7 +1,6 @@
 import Reveal from 'react-awesome-reveal';
 import { keyframes } from "@emotion/react";
-import { confirmAlert } from "react-confirm-alert";
-import 'react-confirm-alert/src/react-confirm-alert.css';
+import {submit} from '../menu/header';
 
 const fadeInUp = keyframes`
   0% {
@@ -27,26 +26,9 @@ const inline = keyframes`
    }
 `;
 
-
-const submit = () => {
-  confirmAlert({
-    customUI: ({ onClose }) => {
-      return (
-        <div className='custom-ui align-content-center'>
-          <h1>Hey!</h1>
-          <p>The Solenoid Mint begins on December 22nd at 5 PM UCT.</p> 
-          <p><span>Join our </span><span className="link-primary" onClick={()=> window.open("https://discord.gg/UYxrby2ZmF", "_target")}>Discord</span><span> and follow us on </span><span className="link-primary" onClick={()=> window.open("https://twitter.com/SolenoidsNFT", "_target")}>Twitter</span><span> for updates.</span></p>
-          <div className="btn-ok"  onClick={onClose}>Ok</div>
-
-        </div>
-      );
-    }
-  });
-};
-
 const slidermainparticle= () => (
 
-    <div className="row">
+    <div className="row" style={{justifyContent: "flex-start"}}>
           <div className="col-md-12">
               <div className="spacer-single"></div>
 
@@ -61,9 +43,9 @@ const slidermainparticle= () => (
               <div className="spacer-double"></div>
               <Reveal className='onStep' keyframes={fadeInUp} delay={600} duration={900} triggerOnce>
               <div className="text-center col-gray">
-              <p className="">
+              <p className="slider-text">
               A collection of 3,333 unique characters who distribute energy on the Solana blockchain. </p>
-              <p className="">Each Solenoid will mint for 1 SOL. 
+              <p className="slider-text">Each Solenoid will mint for 1 SOL. 
               </p>
               </div>
               </Reveal>
@@ -73,30 +55,33 @@ const slidermainparticle= () => (
                 <div className="text-center column">
                   <div onClick={submit} className="btn-main text-center">MINT</div>
                   <div className="mb-sm-30"></div>
-                  </div>
+                </div>
                 </Reveal>
               </div>
 
           </div>
-          <div className="col-lg-12 xs-hide mt-10 jumbo-bottom">
+          <div className="col-lg-12 mt-10">
+            
           <Reveal className='onStep' keyframes={inline} delay={300} duration={1200} triggerOnce>
-            <div className="imgContainer">
+          <div className='jumbo-bottom'>
+            <div className="imgContainer solenoid1">
               <img src="/img/solenoids/jumbotron/1.png" className="img-fluid" />
             </div>
-            <div className="imgContainer">
+            <div className="imgContainer solenoid2">
               <img src="/img/solenoids/jumbotron/2.png" className="img-fluid" />
             </div>
-            <div className="imgContainer">
+            <div className="imgContainer solenoid3">
               <img src="/img/solenoids/jumbotron/3.png" className="img-fluid" />
             </div>
-            <div className="imgContainer">
+            <div className="imgContainer solenoid4">
               <img src="/img/solenoids/jumbotron/6.png" className="img-fluid" />
             </div>
-            <div className="imgContainer">
-              <img src="/img/solenoids/jumbotron/5.png" className="img-fluid" />
+            <div className="imgContainer solenoid5">
+              <img src="/img/solenoids/jumbotron/5.png" className="img-fluid md-hide" />
             </div>
-            <div className="imgContainer">
+            <div className="imgContainer solenoid6">
               <img src="/img/solenoids/jumbotron/4.png" className="img-fluid" />
+            </div>
             </div>
           </Reveal>
           </div>

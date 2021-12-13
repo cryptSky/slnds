@@ -94,15 +94,14 @@ function SolenoidRoadmap() {
   }; */
 
   return (
-    <Box>
       
       <ul>
         {steps.map((step, index) => (
-             <li>
+             <li key={step.label}>
                <span></span>
              <div className="roadmap">
-                <span className="roadmap-label">{step.label}</span><br />
-                <span className="roadmap-description">{step.description}</span>
+                <div className="roadmap-label">{step.label}</div>
+                <div className="roadmap-description">{step.description}</div>
               </div>
               {/*<div className="verticalLine"></div>*/}
               
@@ -110,7 +109,7 @@ function SolenoidRoadmap() {
 
         ))}
       </ul>
-    </Box>
+
   );
 }
 

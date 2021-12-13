@@ -35,7 +35,7 @@ const SolenoidStory= () => (
               </Reveal>
               <Reveal className='onStep' keyframes={fadeInUp} delay={600} duration={600} triggerOnce>
               <div className="spacer-double"></div>
-              <div className="col-gray" style={{width: "400px", paddingLeft: "50px"}}>
+              <div className="col-gray">
 
               Solenoids pride themselves on their ability to take electrical motion 
                and convert
@@ -45,9 +45,9 @@ const SolenoidStory= () => (
               </Reveal>
               <div className="spacer-10"></div>
           </div>
-          <div className="col-md-6 xs-hide">
+          <div className="col-md-6">
             <Reveal className='onStep' keyframes={fadeIn} delay={900} duration={1500} triggerOnce>
-              <img src="./img/Solenoid.png" className="lazy img-fluid" alt=""/>
+              <img src="./img/Solenoid.png" className="lazy img-fluid" alt="" style={{display: "block", margin: "auto"}}/>
             </Reveal>
           </div>
       </div>

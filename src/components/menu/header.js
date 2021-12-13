@@ -12,13 +12,13 @@ setDefaultBreakpoints([
 ]);
 
 
-const submit = () => {
+export const submit = () => {
   confirmAlert({
     customUI: ({ onClose }) => {
       return (
         <div className='custom-ui align-content-center'>
-          <h1>Hey!</h1>
-          <p>The Solenoid Mint begins on December 22nd at 5 PM UCT.</p> 
+          <h3 style={{color: '#843BE6'}}>Hey!</h3>
+          <p>The Solenoid Mint begins on January 5th at 5 PM UCT.</p> 
           <p><span>Join our </span><span className="link-primary" onClick={()=> window.open("https://discord.gg/UYxrby2ZmF", "_target")}>Discord</span><span> and follow us on </span><span className="link-primary" onClick={()=> window.open("https://twitter.com/SolenoidsNFT", "_target")}>Twitter</span><span> for updates.</span></p>
           <div className="btn-ok"  onClick={onClose}>Ok</div>
 

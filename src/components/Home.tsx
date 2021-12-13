@@ -29,6 +29,7 @@ import Button from '@mui/material/Button';
 import SolenoidRoadmap from "./components/SolenoidRoadmap";
 import SolenoidStory from "./components/SolenoidStory";
 
+import {submit} from './menu/header';
 
 
 const ConnectButton = styled(WalletDialogButton)``;
@@ -182,8 +183,8 @@ const GlobalStyles = createGlobalStyle`
     display: none !important;
   }
   h1{
-    color: #843BE6;
-    margin-bottom: 20px;
+    
+    margin-bottom: 40px;
   }
   header#myHeader .logo .d-none{
     display: block !important;
@@ -272,107 +273,30 @@ const GlobalStyles = createGlobalStyle`
       
     }
     .navbar .menu-line, .navbar .menu-line1, .navbar .menu-line2{
-      background: #fff;
+      background: #000;
     }
-    .item-dropdown .dropdown a{
-      color: #fff !important;
-    }
-  }
-
-  .navbar.white .btn {
-    color: #f2f2f2;
-  }
-
-  #myHeader .btn-main {
-    border-radius:30px; 
-    position:relative;
-    background: none;
-    color: rgba(73, 76, 85, 0.58);
-    line-height: 18px;
-    font-size: 14px;
-    padding: 8px 40px;
     
-    &:before {
-      content:"";
-      position:absolute;
-      top:0;
-      left:0;
-      right:0;
-      bottom:0;
-
-      border-radius:30px; 
-      padding:2px; 
-      background:linear-gradient(180deg, rgba(238, 122, 221, 0.69) 0%, rgba(136, 29, 235, 0.69) 100%); 
-      -webkit-mask: 
-         linear-gradient(#fff 0 0) content-box, 
-         linear-gradient(#fff 0 0);
-      -webkit-mask-composite: destination-out; 
-      mask-composite: exclude; 
-    }
-
-    &:hover{
-      box-shadow: 1px 1px 10px 0px #9B51E0;
-      transition: all 0.3s ease;
-    }
-  
-  }
-
-  .row .column {
-    display: flex;
-    flex: 1;
-    margin-left: 0;
-    max-width: 100%;
-    width: 100%;
-  }
-
-  .imgContainer{
-    float:left;
-  }
-
-  .imgContainer img {
-    width: 220px;
-    height: 220px;
-  }
-
-  .vertical-align {
-    display: table;
-    width: 100%;
-  }
-  .jumbo-bottom {
-    position: absolute;
-    padding: 0;
-    bottom: 0px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    width: 1320px;
-  }
-
-  .countdown-timer {
-    background: linear-gradient(150deg, #FD8BFF 10%, #881DEB 77%);
-    height: 100vh;
   }
 
   .svglines {
     background: url("./img/topology.svg");
     background-position: center;
-    height: 100vh;
+    height: fit-content;
     padding: 90px 0;
   }
-
+  
   .faq {
     background: linear-gradient(150deg, #FD8BFF 10%, #881DEB 77%);
-    height: 100vh;
+    height: fit-content;
   }
-
+  
   .svglines-faq {
     background: url("./img/topology-faq.svg");
     background-position: center;
-    height: 100vh;
+    height: fit-content;
     padding: 90px 0;
   }
 
-  
 
 `;
 
@@ -434,9 +358,14 @@ const renderer = ({ days, hours, minutes, seconds, completed } : {days: any, hou
       <section className="container" style={{paddingBottom: "0px", paddingTop: "0px"}} >
         <div className="jumbotron no-bg">
           <Element name="top"></Element>
-          <div className='row align-items-center'>
-          
+          <div className='row align-items-center'>          
           <div className="spacer-double"></div>
+
+          <div className="spacers">
+            <div className="spacer-double"></div>
+            <div className="spacer-double"></div>
+            <div className="spacer-double"></div>
+          </div>
 
         </div> 
          <SolenoidSliderMain/>
@@ -469,20 +398,20 @@ const renderer = ({ days, hours, minutes, seconds, completed } : {days: any, hou
       </section>
 
    <Element name="story"></Element>
-   <section className="container" >
+   <section className="container-fluid" >
       
       <SolenoidStory/>
    </section>
 
    <Element name="roadmap"></Element>
   <section className='container'>
-  <h1 className="launch-shadow solenoid-title">Roadmap</h1>
-    <div className='row'>
+  
+    <h1 className="launch-shadow solenoid-title">Roadmap</h1>
     <div className="spacer-single"></div>
       <div className='col-md-12'>
         <SolenoidRoadmap />
       </div>
-    </div>
+ 
   </section>
 
   <Element name="faq"></Element>
@@ -499,6 +428,39 @@ const renderer = ({ days, hours, minutes, seconds, completed } : {days: any, hou
     </div>
     </div>
   </div>
+  </section>
+
+  <section className='container'>
+  <div className="spacer-single"></div>
+    <div className='bottom row'>
+      <div className='col-md-2 order-3 order-lg-2 order-md-2'>
+        <div className="center-vertical">
+          <div className="text-center footer-social">                                        
+              <div onClick={()=> window.open("https://twitter.com/SolenoidsNFT", "_target")}>Twitter</div>
+              <div onClick={()=> window.open("https://discord.gg/UYxrby2ZmF", "_target")}>Discord</div>
+          </div>
+        </div>
+      </div>
+      <div className='col-md-4 order-1 order-lg-3 order-md-3'>
+        <div className="join-box">
+          <div><h2>Join the Discord & Follow us on Twitter!</h2></div>
+          <div><span>#SlinkGang</span></div>
+          <div className="text-center column">
+              <div onClick={submit} className="btn-footer text-center">MINT</div>
+              <div className="mb-sm-30"></div>
+          </div>
+        </div>
+      </div>
+      <div className='col-md-6 order-2 order-lg-1 order-md-1'>
+          <img
+            src="./img/logo.png"
+            className="img-fluid center-vertical"            
+            alt="#"
+          />
+      </div>
+
+
+    </div>
   </section>
 
 
