@@ -309,8 +309,8 @@ const renderer = ({ days, hours, minutes, seconds, completed } : {days: any, hou
           <div></div>
           <div id="clockdiv">           
 
-            <div>
-              <div className="number">{days}</div>
+            <div className="">
+              <div className="number left-rounded">{days}</div>
               <div className="smalltext">Days</div>
             </div>
 
@@ -325,8 +325,8 @@ const renderer = ({ days, hours, minutes, seconds, completed } : {days: any, hou
             </div> 
 
        
-            <div>
-              <div className="number">{seconds}</div>
+            <div className="">
+              <div className="number right-rounded">{seconds}</div>
               <div className="smalltext">Seconds</div>
             </div>
 

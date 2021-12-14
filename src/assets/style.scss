@@ -4200,8 +4200,15 @@ img.img-rounded-main{
   width: min-content;
 
 }
-#clockdiv div{
-  
+#clockdiv div.left-rounded{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  //background: #01030d;
+}
+
+#clockdiv div.right-rounded{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   //background: #01030d;
 }
 
