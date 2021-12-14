@@ -45,7 +45,7 @@ const AccordionDetails = styled(MuiAccordionDetails)(({ theme }) => ({
 }));
 
 const MyTypography = styled(Typography)({
-  fontFamily: "Avenir Next",
+  fontFamily: "Inter",
 });
 
 export default function SolenoidFAQ() {
