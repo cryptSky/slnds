@@ -369,6 +369,7 @@ const renderer = ({ days, hours, minutes, seconds, completed } : {days: any, hou
       <section className="container-fluid countdown-timer" style={{paddingBottom: "0px", paddingTop: "0px"}}>
         <div className="svglines">
         <div className='row'>
+        <div className="spacer-double"></div>
           <h1 className='text-center countdown-title solenoid-title'>COUNTDOWN TO LAUNCH</h1>
           <div className='col-lg-12 mb-2 justify-content-center'>
           <Countdown
@@ -379,12 +380,14 @@ const renderer = ({ days, hours, minutes, seconds, completed } : {days: any, hou
         </div> 
 
         <div className='row'>
+        <div className="spacer-double"></div>
         <div className='col-lg-2 mb-2 justify-content-center'></div>
           <div className='col-lg-8 mb-2 justify-content-center'>
           <SolenoidImages/>
           </div>
           <div className='col-lg-2 mb-2 justify-content-center'></div>
         </div> 
+        <div className="spacer-double"></div>
         
         </div>     
 
