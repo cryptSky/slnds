@@ -36,11 +36,16 @@ const SolenoidStory= () => (
               <Reveal className='onStep' keyframes={fadeInUp} delay={600} duration={600} triggerOnce>
               <div className="spacer-double"></div>
               <div className="col-gray">
-
-              Solenoids pride themselves on their ability to take electrical motion 
-               and convert
-              it into force—allowing each Solenoid to represent a unique magnetic field within the Metaverse,
-              but they are not alone....
+              <p>
+              A Solenoid exists with a sole purpose – to power the metaverse. Without the Solenoids, nothing can survive. </p>
+              <p>
+              Millions of years ago, the Solenoids went to the darkest and deepest part of the metaverse, The Flux, to protect what keeps the metaverse alive. 
+              They knew the responsibility they had and the protection their power required so they decided to go into hiding.  </p>
+              <p>
+              As the majority of the Solenoids rested, Six Slinks were chosen to stand guard against the powers that be. 
+              These six Solenoids have defeated every challenger that dared to enter The Flux, but something feels different about the latest threat that appeared on their radars. </p>
+              <p>
+              As they feared the worst, they decided to awaken the rest of the Solenoids…. </p>
               </div>
               </Reveal>
               <div className="spacer-double"></div>
