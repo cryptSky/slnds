@@ -4432,7 +4432,8 @@ ul li:last-child div.verticalLine{
   padding: 0;
   bottom: 0px;
   margin: 0 auto;
-  width: 90vw;
+  max-width: 1320px;
+
 }
 
 .jumbo-bottom img {
@@ -5005,6 +5006,10 @@ section {
   
   }
 
+  .spacers {
+    display: block;
+  }
+
 
 }
 
@@ -5178,10 +5183,6 @@ section {
     display: none;
   }
 
-  .solenoid1 {
-    display: none;
-  }
-
   .solenoid5 {
     display: none;
   }
@@ -5193,8 +5194,12 @@ section {
   }
 
   .jumbo-bottom img {
-    width: calc((100vw/4 - 20px));
-    height: calc((100vw/4 - 20px));    
+    width: calc((100vw/4 - 45px));
+    height: calc((100vw/4 - 45px));    
+  }
+
+  .spacers {
+    display: block;
   }
 
   
@@ -5334,23 +5339,23 @@ section {
   }
 
   .jumbotron.no-bg {
-    height: calc((100vh - 80px));
-    height: -o-calc(100% - 80px); /* opera */
-    height: -webkit-calc(100% - 80px); /* google, safari */
-    height: -moz-calc(100% - 80px); /* firefox */
+    height: calc((100vh - 84px));
+    height: -o-calc(100% - 84px); /* opera */
+    height: -webkit-calc(100% - 84px); /* google, safari */
+    height: -moz-calc(100% - 84px); /* firefox */
   }
 
 
     .jumbo-bottom img {
-      width: calc((100vw/4 - 30px));
-      height: calc((100vw/4 - 30px));    
+      width: calc((100vw/4 - 43px));
+      height: calc((100vw/4 - 43px));    
     }
 
 }
 
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) and (max-width: 1200px) { #clockdiv .middle { display: inline; } 
+@media only screen and (min-width: 992px) and (max-width: 1199px) { #clockdiv .middle { display: inline; } 
 
  
 .join-box img {
@@ -5409,11 +5414,8 @@ section {
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) and (max-width: 1500px) {  #clockdiv .middle { display: inline; } 
+@media only screen and (min-width: 1199px) and (max-width: 1399px) {  #clockdiv .middle { display: inline; } 
 
-  .solenoid4 {
-    display: none;
-  }
 
   section {
     padding-top: 50px;
@@ -5421,15 +5423,15 @@ section {
   }
 
   .jumbo-bottom img {
-    width: calc((100vw/5 - 30px));
-    height: calc((100vw/5 - 30px));    
+    width: calc((100vw/6 - 20px));
+    height: calc((100vw/6 - 20px));    
   }
 
 
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1501px) and (max-width: 1919px) {  #clockdiv .middle { display: inline; } 
+@media only screen and (min-width: 1400px) and (max-width: 1919px) {  #clockdiv .middle { display: inline; } 
 
 section {
   padding-top: 50px;
