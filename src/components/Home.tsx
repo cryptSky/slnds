@@ -216,14 +216,7 @@ const GlobalStyles = createGlobalStyle`
   .navbar .navbar-item .lines{
     border-bottom: 2px solid #7251F5;
   }
-  .jumbotron.no-bg{
-    height: 100vh;
-    overflow: hidden;
-    background-repeat: repeat;
-    background-size: cover;
-    background-position: bottom;
-    background-repeat: no-repeat;
-  }
+
   #tsparticles{
     top: 0;
   }
@@ -360,10 +353,11 @@ const renderer = ({ days, hours, minutes, seconds, completed } : {days: any, hou
           <Element name="top"></Element>
           <div className='row align-items-center'>          
           <div className="spacer-double"></div>
+  
+          <div className="intro">INTRODUCING</div>
 
-          <div className="">
-            <div className="spacer-double"></div>
-            <div className="spacer-double"></div>
+          <div className="spacers">
+                <div className="spacer-double"></div>
             <div className="spacer-double"></div>
           </div>
 
@@ -379,7 +373,7 @@ const renderer = ({ days, hours, minutes, seconds, completed } : {days: any, hou
           <h1 className='text-center countdown-title solenoid-title'>COUNTDOWN TO LAUNCH</h1>
           <div className='col-lg-12 mb-2 justify-content-center'>
           <Countdown
-            date={new Date(Date.UTC(2021, 11, 22, 17, 0, 0))}
+            date={new Date(Date.UTC(2022, 0, 5, 17, 0, 0))}
             renderer={renderer}
           />
           </div>
@@ -430,10 +424,11 @@ const renderer = ({ days, hours, minutes, seconds, completed } : {days: any, hou
   </div>
   </section>
 
-  <section className='container'>
+  <section className='container-fluid'>
+  <div className="cont">
   <div className="spacer-single"></div>
     <div className='bottom row'>
-      <div className='col-md-2 order-3 order-lg-2 order-md-2'>
+      <div className='col-md-2 order-4 order-lg-2 order-md-2'>
         <div className="center-vertical">
           <div className="text-center footer-social">                                        
               <div onClick={()=> window.open("https://twitter.com/SolenoidsNFT", "_target")}>Twitter</div>
@@ -451,7 +446,16 @@ const renderer = ({ days, hours, minutes, seconds, completed } : {days: any, hou
           </div>
         </div>
       </div>
-      <div className='col-md-6 order-2 order-lg-1 order-md-1'>
+
+      <div className='col-md-6 order-2 bottom-logo'>
+          <img
+            src="./img/logo_small.png"
+            className="img-fluid center-vertical sol-logo"            
+            alt="#"
+          />
+      </div>
+
+      <div className='col-md-6 order-3 order-lg-1 order-md-1'>
           <img
             src="./img/logo.png"
             className="img-fluid center-vertical"            
@@ -460,6 +464,7 @@ const renderer = ({ days, hours, minutes, seconds, completed } : {days: any, hou
       </div>
 
 
+      </div>
     </div>
   </section>
 

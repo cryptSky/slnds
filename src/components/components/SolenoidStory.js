@@ -27,7 +27,7 @@ const SolenoidStory= () => (
  <div className="container">
     <div className="row align-items-center">
           <div className="col-md-6">
-              <div className="spacer-single"></div>
+              <div className="spacer-double"></div>
 
               <div className="spacer-10"></div>
               <Reveal className='onStep' keyframes={fadeInUp} delay={300} duration={600} triggerOnce>
@@ -43,7 +43,7 @@ const SolenoidStory= () => (
               but they are not alone....
               </div>
               </Reveal>
-              <div className="spacer-10"></div>
+              <div className="spacer-double"></div>
           </div>
           <div className="col-md-6">
             <Reveal className='onStep' keyframes={fadeIn} delay={900} duration={1500} triggerOnce>

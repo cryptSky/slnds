@@ -427,7 +427,7 @@ h2.s1,
     font-size: 24px;
 }
 h2.deco-text span {
-    font-family: "Parisienne";
+    font-family: "Inter" !important;;
     display: block;
     line-height: .85em;
     font-weight: lighter;
@@ -484,7 +484,7 @@ h4.s2 {
     line-height: 1.8em;
 }
 h4.s3 {
-    font-family: "Parisienne";
+    font-family: "Inter" !important;;
     font-size: 60px;
     font-weight: lighter;
 }
@@ -515,7 +515,7 @@ h1.title strong {
     font-weight: normal;
 }
 h1.hs1 {
-    font-family: "Parisienne";
+    font-family: "Inter" !important;;
     font-size: 96px;
     display: inline-block;
     -webkit-transform: rotate(-5deg);
@@ -524,7 +524,7 @@ h1.hs1 {
     transform: rotate(-5deg);
 }
 h1.hs2 {
-    font-family: "Parisienne";
+    font-family: "Inter" !important;;
     font-size: 72px;
     display: inline-block;
     font-weight: lighter;
@@ -553,7 +553,7 @@ h2.name-s1 span {
 }
 h2.hw {
     display: block;
-    font-family: "Parisienne";
+    font-family: "Inter" !important;;
     font-size: 48px;
     text-transform: none;
     font-weight: lighter;
@@ -597,7 +597,7 @@ h2.hs1 span {
     font-size: 48px;
     position: relative;
     top: 10px;
-    font-family: "Miama";
+    font-family: "Inter" !important;;
     margin: 0 15px 0 10px;
     font-weight: normal;
 }
@@ -657,7 +657,7 @@ p.lead {
     letter-spacing: normal;
     outline: 0;
     font-weight: 400;
-    font-family: Inter;
+    font-family: "Inter" !important;;
     line-height: 19px;
     text-decoration: none;
     padding: 20px 60px;
@@ -742,7 +742,7 @@ p.lead {
     }
   }
   .dropdown-toggle::after{
-    font-family: FontAwesome;
+    font-family: "Inter" !important;;
     //color: rgba(255, 255, 255, .5);
     padding-left: 2px;
     font-size: 8px;
@@ -814,7 +814,7 @@ p.lead {
     transition: all 0.6s ease;
     &.white{
       a{
-        font-family: Inter;
+        font-family: "Inter" !important;;
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
@@ -1160,7 +1160,7 @@ p.lead {
 }
 .previousButton::before, .nextButton::before{
     content:"\f054";
-    font-family: FontAwesome;
+    font-family: "Inter" !important;;
     font-size: 1.3rem;
     font-style: normal;
     font-weight: normal;
@@ -1784,7 +1784,7 @@ footer{
       i{
         font-style: normal;
         &:before{
-        font-family: "FontAwesome";
+        font-family: "Inter" !important;;
         font-size: 18px;
         content: "\f106";
         color: #fff !important;
@@ -2266,7 +2266,7 @@ address {
       }
       &:after {
         content: "\f00c";
-        font-family: "FontAwesome";
+        font-family: "Inter" !important;;
         margin-right: 15px;
         float: right;
         position: absolute;
@@ -2570,7 +2570,7 @@ i.font60 {
 
 .icon_wallet::before {
     content: "\e100";
-    font-family: 'ElegantIcons';
+    font-family:"Inter" !important;;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
@@ -2675,7 +2675,7 @@ i.font60 {
         &::before {
           content: "\f053" !important;
           font-size: 1rem;
-          font-family: FontAwesome !important;
+          font-family: "Inter" !important;;
           font-style: normal;
           font-weight: normal;
           color: $white;
@@ -2704,7 +2704,7 @@ i.font60 {
       &::before {
         content: "\f054" !important;
         font-size: 1rem;
-        font-family: FontAwesome !important;
+        font-family: "Inter" !important;;
         font-style: normal;
         font-weight: normal;
         color: $white;
@@ -3081,7 +3081,7 @@ i.font60 {
           display: block;
           content: "\f053" !important;
           font-size: .9rem;
-          font-family: FontAwesome !important;
+          font-family: "Inter" !important;
           font-style: normal;
           font-weight: normal;
           color: $black;
@@ -3108,7 +3108,7 @@ i.font60 {
         display: block;
         content: "\f054" !important;
         font-size: .9rem;
-        font-family: FontAwesome !important;
+        font-family: "Inter" !important;;
         font-style: normal;
         font-weight: normal;
         color: $black;
@@ -3846,7 +3846,7 @@ img.img-rounded-main{
       position: absolute;
       content: '';
       display: inline-block;
-      font-family: "FontAwesome";
+      font-family: "Inter" !important;;
       margin-right: 10px;
       border: solid 2px rgba(255,255,255,.2);
       width: 16px;
@@ -4114,12 +4114,38 @@ img.img-rounded-main{
 
 }
 
+.cont {
+  max-width: 1320px;
+  margin: auto; 
+}
 
+.intro {
+  display: none;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 130%;
+/* or 18px */
+
+  text-align: center;
+  letter-spacing: 2px;
+
+  background-color: rgba(136, 29, 235, 0.87);
+  background-image: linear-gradient(180deg, rgba(255, 53, 226, 0.22) 0%, rgba(136, 29, 235, 0.87) 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+
+}
 
 .custom-ui {
   text-align: center;
   width: 500px;
-  padding: 40px;
+  padding: 40px 0px;
   background: #FDFCFF;
   box-shadow: 0 20px 75px rgb(0 0 0 / 23%);
   color: #494C55;
@@ -4162,7 +4188,7 @@ img.img-rounded-main{
 }
 
 #clockdiv{
-  font-family: sans-serif;
+  font-family: "Inter" !important;
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -4406,7 +4432,7 @@ ul li:last-child div.verticalLine{
   padding: 0;
   bottom: 0px;
   margin: 0 auto;
-  width: 1320px;;
+  width: 90vw;
 }
 
 .jumbo-bottom img {
@@ -4458,7 +4484,7 @@ ul li:last-child div.verticalLine{
 
 .footer-social {
   cursor: pointer;
-  font-family: Inter;
+  font-family: "Inter" !important;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -4506,11 +4532,57 @@ footer.footer-light {
   letter-spacing: 1.2px;  
 }
 
+.jumbotron.no-bg{
+  height: 100vh;
+  overflow: hidden;
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.sol-logo {
+  margin: auto;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.bottom-logo {
+  display: none;
+}
+
 /* Extra small devices (phones, 400px and down) */
 @media only screen and (max-width: 400px) {
   
+  .custom-ui {
+    width: 100%;
+  }
+
   #logo-img {
     margin-bottom: 5px;
+  }
+
+  .bottom-logo {
+    display: block;
+  }
+
+  body {
+    background: white;
+  }
+
+  .jumbo-bottom img {
+    width: calc((100vw/2 - 20px));
+    height: calc((100vw/2 - 20px));    
+  }
+
+
+  .intro {
+    display: block;
+  }
+
+  .spacers {
+    display: none;
   }
 
   .navbar .navbar-item {
@@ -4529,7 +4601,7 @@ footer.footer-light {
     padding: 0px 0px; 
   }
 
-  .jumbotron .no-bg {
+  .jumbotron.no-bg {
     height: calc((100vh - 80px));
     height: -o-calc(100% - 80px); /* opera */
     height: -webkit-calc(100% - 80px); /* google, safari */
@@ -4697,9 +4769,6 @@ section {
     display: none;
   }
   
-  .solenoid6 {
-    display: none;
-  }
 
   #clockdiv div > .number{
     width: 100%;
@@ -4718,8 +4787,33 @@ section {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 400px) and (max-width: 600px) { 
 
+  .custom-ui {
+    width: 100%;
+  }
+
+  body {
+    background: white;
+  }
+
+  .bottom-logo {
+    display: block;
+  }
+
+  .jumbo-bottom img {
+    width: calc((100vw/3 - 20px));
+    height: calc((100vw/3 - 20px));    
+  }
+
+  .intro {
+    display: block;
+  }
+
   #logo-img {
     margin-bottom: 5px;
+  }
+
+  .spacers {
+    display: none;
   }
 
   .navbar .navbar-item {
@@ -4740,6 +4834,9 @@ section {
 
   .jumbotron.no-bg {
     height: calc((100vh - 80px));
+    height: -o-calc(100% - 80px); /* opera */
+    height: -webkit-calc(100% - 80px); /* google, safari */
+    height: -moz-calc(100% - 80px); /* firefox */
   }
 
   .solenoid-title {
@@ -4900,13 +4997,6 @@ section {
     display: none;
   }
 
-  .solenoid5 {
-    display: none;
-  }
-
-  .solenoid4 {
-    display: none;
-  }
 
 
   #clockdiv div > .number{
@@ -4920,12 +5010,36 @@ section {
 
 @media only screen and (min-width: 600px) and (max-width: 768px) { 
 
+  body {
+    background: white;
+  }
+
+  .bottom-logo {
+    display: block;
+  }
+
+  .jumbo-bottom img {
+    width: calc((100vw/3 - 30px));
+    height: calc((100vw/3 - 30px));    
+  }
+
+  .intro {
+    display: block;
+  }
+
   #logo-img {
     margin-bottom: 5px;
   }
 
+  .spacers {
+    display: none;
+  }
+
   .jumbotron.no-bg {
     height: calc((100vh - 80px));
+    height: -o-calc(100% - 80px); /* opera */
+    height: -webkit-calc(100% - 80px); /* google, safari */
+    height: -moz-calc(100% - 80px); /* firefox */
   }
 
   .navbar .navbar-item {
@@ -4934,29 +5048,11 @@ section {
     
   }
 
-  .btn-main {
-    padding: 10px 30px;
-    font-size: 14px;
-  }
-
   .navbar .menu {
     display: block;
     padding: 0px 0px; 
   }
 
-  .solenoid-title {
-    font-size: 30px;
-    text-align: center;
-  }
-
-  ul {
-    white-space: nowrap;
-    padding: 0 5px;
-  }
-
-  .container {
-    margin-left: 10px;
-  }
 
   .container .bottom {
     margin-left: 30px;
@@ -5082,10 +5178,6 @@ section {
     display: none;
   }
 
-  .solenoid3 {
-    display: none;
-  }
-  
   .solenoid1 {
     display: none;
   }
@@ -5100,6 +5192,12 @@ section {
   
   }
 
+  .jumbo-bottom img {
+    width: calc((100vw/4 - 20px));
+    height: calc((100vw/4 - 20px));    
+  }
+
+  
 
 
 }
@@ -5110,42 +5208,17 @@ section {
     margin-bottom: 5px;
   }
 
-  .jumbotron.no-bg {
-    height: calc((100vh - 80px));
-  }
 
-  .navbar .navbar-item {
-    display: block;
-    padding: 5px 0;
-    
-  }
-
-  .btn-main {
-    padding: 10px 30px;
-    font-size: 14px;
-  }
-
-  .navbar .menu {
-    display: block;
-    padding: 0px 0px; 
-  }
-
-  .solenoid-title {
-    font-size: 30px;
-    text-align: center;
-  }
 
   ul {
     white-space: nowrap;
     padding: 0 5px;
   }
 
-  .container {
-    margin-left: 10px;
-  }
 
   .container .bottom {
     margin-left: 30px;
+    
     
   }
 
@@ -5213,9 +5286,6 @@ section {
     
   }  
 
-  .jumbotron.no-bg {
-    height: calc((100vh - 80px));
-  }
   
   #clockdiv > .colon{
     font-size:50px;
@@ -5252,10 +5322,6 @@ section {
   .solenoid4 {
     display: none;
   }
-
-  .solenoid3 {
-    display: none;
-  }
   
   .solenoid1 {
     display: none;
@@ -5267,15 +5333,42 @@ section {
   
   }
 
+  .jumbotron.no-bg {
+    height: calc((100vh - 80px));
+    height: -o-calc(100% - 80px); /* opera */
+    height: -webkit-calc(100% - 80px); /* google, safari */
+    height: -moz-calc(100% - 80px); /* firefox */
+  }
+
+
+    .jumbo-bottom img {
+      width: calc((100vw/4 - 30px));
+      height: calc((100vw/4 - 30px));    
+    }
+
 }
 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) and (max-width: 1200px) { #clockdiv .middle { display: inline; } 
 
-.jumbo-bottom {
-  width: 900px;;
+ 
+.join-box img {
+  margin-bottom: 10px;
 }
+
+.join-box h2 {
+  line-height: 35px;
+  font-size: 18px;
+}
+
+.jumbotron.no-bg {
+  height: calc((100vh - 110px));
+  height: -o-calc(100% - 110px); /* opera */
+  height: -webkit-calc(100% - 110px); /* google, safari */
+  height: -moz-calc(100% - 110px); /* firefox */
+}
+
 
 .header-social {
   margin-left: 1em;
@@ -5304,10 +5397,19 @@ section {
   display: none;
 }
 
+.jumbo-bottom img {
+  width: calc((100vw/4 - 60px));
+  height: calc((100vw/4 - 60px));    
+}
+
+.spacers {
+  display: none;
+}
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) and (max-width: 1400px) {  #clockdiv .middle { display: inline; } 
+@media only screen and (min-width: 1200px) and (max-width: 1500px) {  #clockdiv .middle { display: inline; } 
 
   .solenoid4 {
     display: none;
@@ -5318,15 +5420,16 @@ section {
     padding-bottom: 50px;
   }
 
-  .jumbo-bottom {
-    width: 1100px;;
+  .jumbo-bottom img {
+    width: calc((100vw/5 - 30px));
+    height: calc((100vw/5 - 30px));    
   }
 
 
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1401px) and (max-width: 1919px) {  #clockdiv .middle { display: inline; } 
+@media only screen and (min-width: 1501px) and (max-width: 1919px) {  #clockdiv .middle { display: inline; } 
 
 section {
   padding-top: 50px;
@@ -5342,5 +5445,6 @@ section {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
 
 }

@@ -168,7 +168,7 @@ const Header = function() {
                   
       </div>
 
-      <div>
+      <div className="container">
         <button className="nav-icon" onClick={() => btn_icon(!showmenu)}>
           <div className="menu-line white"></div>
           <div className="menu-line1 white"></div>
