@@ -4534,7 +4534,7 @@ footer.footer-light {
 }
 
 .jumbotron.no-bg{
-  height: 100vh;
+  //height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   overflow: hidden;
   background-repeat: repeat;
@@ -4604,7 +4604,7 @@ footer.footer-light {
   }
 
   .jumbotron.no-bg {
-    height: calc(100vh - 80px);
+    //height: calc(100vh - 80px);
     height: calc(var(--vh, 1vh) * 100 - 80px);
     height: -o-calc(100% - 80px); /* opera */
     height: -webkit-calc(100% - 80px); /* google, safari */
@@ -4836,7 +4836,7 @@ section {
   }
 
   .jumbotron.no-bg {
-    height: calc(100vh - 80px);
+    //height: calc(100vh - 80px);
     height: calc(var(--vh, 1vh) * 100 - 80px);
     height: -o-calc(100% - 80px); /* opera */
     height: -webkit-calc(100% - 80px); /* google, safari */
@@ -5044,7 +5044,7 @@ section {
   }
 
   .jumbotron.no-bg {
-    height: calc(100vh - 80px);
+    //height: calc(100vh - 80px);
     height: calc(var(--vh, 1vh) * 100 - 80px);
     height: -o-calc(100% - 80px); /* opera */
     height: -webkit-calc(100% - 80px); /* google, safari */
@@ -5343,7 +5343,7 @@ section {
   }
 
   .jumbotron.no-bg {
-    height: calc(100vh - 84px);
+    //height: calc(100vh - 84px);
     height: calc(var(--vh, 1vh) * 100 - 84px);
     height: -o-calc(100% - 84px); /* opera */
     height: -webkit-calc(100% - 84px); /* google, safari */
@@ -5373,7 +5373,7 @@ section {
 }
 
 .jumbotron.no-bg {
-  height: calc(100vh - 110px);
+  //height: calc(100vh - 110px);
   height: calc(var(--vh, 1vh) * 100 - 110px);
   height: -o-calc(100% - 110px); /* opera */
   height: -webkit-calc(100% - 110px); /* google, safari */
