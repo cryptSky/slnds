@@ -32,6 +32,7 @@ const slidermainparticle= () => (
           <div className="col-md-12">
               <div className="spacer-single"></div>
 
+              
 
 
               <h6> <span className="text-uppercase color"></span></h6>
@@ -67,11 +68,20 @@ const slidermainparticle= () => (
             <div className="imgContainer solenoid1">
               <img src="/img/solenoids/jumbotron/1.png" className="img-fluid" />
             </div>
+            <div className="imgContainer solenoid1m">
+              <img src="/img/solenoids/jumbotron/1m.png" className="img-fluid" />
+            </div>
             <div className="imgContainer solenoid2">
               <img src="/img/solenoids/jumbotron/2.png" className="img-fluid" />
             </div>
+            <div className="imgContainer solenoid2m">
+              <img src="/img/solenoids/jumbotron/2m.png" className="img-fluid" />
+            </div>
             <div className="imgContainer solenoid3">
               <img src="/img/solenoids/jumbotron/3.png" className="img-fluid" />
+            </div>
+            <div className="imgContainer solenoid3m">
+              <img src="/img/solenoids/jumbotron/3m.png" className="img-fluid" />
             </div>
             <div className="imgContainer solenoid4">
               <img src="/img/solenoids/jumbotron/6.png" className="img-fluid" />
