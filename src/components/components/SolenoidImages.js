@@ -9,7 +9,6 @@ const Outer = styled.div`
   justify-content: center;
   align-content: center;
   align-items: center;
-  height: 260px;
   overflow: hidden;
  
 `;
