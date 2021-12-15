@@ -394,20 +394,21 @@ const renderer = ({ days, hours, minutes, seconds, completed } : {days: any, hou
       </section>
 
    <Element name="story"></Element>
-   <section className="container-fluid" >
+   <section className="container-fluid" style={{background: "#fff"}}>
       
       <SolenoidStory/>
    </section>
 
    <Element name="roadmap"></Element>
-  <section className='container'>
+   <section className='container-fluid' style={{background: "#fff"}}>
+  <div className='container'>
   
     <h1 className="launch-shadow solenoid-title">Roadmap</h1>
     <div className="spacer-single"></div>
       <div className='col-md-12'>
         <SolenoidRoadmap />
       </div>
- 
+    </div>
   </section>
 
   <Element name="faq"></Element>
@@ -426,7 +427,7 @@ const renderer = ({ days, hours, minutes, seconds, completed } : {days: any, hou
   </div>
   </section>
 
-  <section className='container-fluid'>
+  <section className='container-fluid' style={{background: "#fff"}}>
   <div className="cont">
   <div className="spacer-single"></div>
     <div className='bottom row'>
@@ -435,6 +436,7 @@ const renderer = ({ days, hours, minutes, seconds, completed } : {days: any, hou
           <div className="text-center footer-social">                                        
               <div onClick={()=> window.open("https://twitter.com/SolenoidsNFT", "_target")}>Twitter</div>
               <div onClick={()=> window.open("https://discord.gg/UYxrby2ZmF", "_target")}>Discord</div>
+              <div style={{marginTop: "10px"}}><span>Made with ⚡ in The Flux</span></div>
           </div>
         </div>
       </div>

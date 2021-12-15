@@ -20,7 +20,7 @@ const MyStepLabel = styled(StepLabel)({
   '& .Mui-disabled': {color: "#C4C4C4"},
   '& .Mui-completed': {color: "#C4C4C4"},
 
-  background: "#FDFCFF",
+  background: "#FFF",
   border: "1px solid #9B51E0",
   "box-sizing": "border-box",
   "border-radius": "19px",
