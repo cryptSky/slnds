@@ -63,7 +63,7 @@ const slidermainparticle= () => (
           </div>
           <div className="col-lg-12 mt-10">
             
-          <Reveal className='onStep' keyframes={inline} delay={300} duration={1200} triggerOnce>
+          <Reveal className='onStep centerthis' keyframes={inline} delay={300} duration={1200} triggerOnce>
           <div className='jumbo-bottom'>
             <div className="imgContainer solenoid1">
               <img src="/img/solenoids/jumbotron/1.png" className="img-fluid" />
