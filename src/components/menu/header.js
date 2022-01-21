@@ -18,7 +18,7 @@ export const submit = () => {
       return (
         <div className='custom-ui align-content-center'>
           <h3 style={{color: '#843BE6'}}>Hey!</h3>
-          <p>The Solenoid Mint begins on January 31st at 5 PM UCT.</p> 
+          <p></p> 
           <p><span>Join our </span><span className="link-primary" onClick={()=> window.open("https://discord.gg/UYxrby2ZmF", "_target")}>Discord</span><span> and follow us on </span><span className="link-primary" onClick={()=> window.open("https://twitter.com/SolenoidsNFT", "_target")}>Twitter</span><span> for updates.</span></p>
           <div className="btn-ok"  onClick={onClose}>Ok</div>
 

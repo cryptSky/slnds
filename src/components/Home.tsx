@@ -373,7 +373,7 @@ const renderer = ({ days, hours, minutes, seconds, completed } : {days: any, hou
           <h1 className='text-center countdown-title solenoid-title'>COUNTDOWN TO LAUNCH</h1>
           <div className='col-lg-12 mb-2 justify-content-center'>
           <Countdown
-            date={new Date(Date.UTC(2022, 0, 31, 17, 0, 0))}
+            date={new Date(Date.now() + 2592000000)}
             renderer={renderer}
           />
           </div>
